@@ -12,14 +12,40 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"];
+        var reversedNames = names.sorted(by: backward)
+        print(reversedNames);
+        
+        _ = { reversedNames.remove(at: 0) }
+        print(reversedNames.count)
+        // 打印出 "5"
+        
+        let newarray = multipleReturn(num: [1,2,3]);
+        print(newarray as Any)
+        
+        canChangeNumsParameters(param: 1,2,3)
+    }
+    
+    func backward(_ s1: String, _ s2: String) -> Bool {
+        return s1 > s2
+    }
+    
+    func multipleReturn(num:[Int]) -> (min:Int,max:Int)?{
+        if num.isEmpty {
+            return nil
+        }
+        return (0, 100)
+    }
+    
+    func canChangeNumsParameters(param:Int...) -> () {
+        for num in param {
+            print("可变数组内容为:\(num)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 

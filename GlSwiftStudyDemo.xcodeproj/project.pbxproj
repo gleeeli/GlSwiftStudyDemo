@@ -12,6 +12,13 @@
 		194941EA2148AC2B00D207A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194941E82148AC2B00D207A3 /* Main.storyboard */; };
 		194941EC2148AC2D00D207A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 194941EB2148AC2D00D207A3 /* Assets.xcassets */; };
 		194941EF2148AC2D00D207A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194941ED2148AC2D00D207A3 /* LaunchScreen.storyboard */; };
+		194941FE2148EBDC00D207A3 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194941FD2148EBDC00D207A3 /* Sequence.swift */; };
+		194942022148F22E00D207A3 /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194942012148F22E00D207A3 /* Strategy.swift */; };
+		194942062148F2AD00D207A3 /* ClosureStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194942052148F2AD00D207A3 /* ClosureStrategy.swift */; };
+		194942082148FE5B00D207A3 /* MultiplyStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194942072148FE5B00D207A3 /* MultiplyStrategy.swift */; };
+		1949420A21490E0600D207A3 /* StrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1949420921490E0600D207A3 /* StrategyViewController.swift */; };
+		1949420E2149150400D207A3 /* GeneralSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1949420D2149150400D207A3 /* GeneralSequence.swift */; };
+		19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1949420F214919FE00D207A3 /* NotStrategyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		194941EB2148AC2D00D207A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		194941EE2148AC2D00D207A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		194941F02148AC2D00D207A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		194941FD2148EBDC00D207A3 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		194942012148F22E00D207A3 /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
+		194942052148F2AD00D207A3 /* ClosureStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureStrategy.swift; sourceTree = "<group>"; };
+		194942072148FE5B00D207A3 /* MultiplyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyStrategy.swift; sourceTree = "<group>"; };
+		1949420921490E0600D207A3 /* StrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyViewController.swift; sourceTree = "<group>"; };
+		1949420D2149150400D207A3 /* GeneralSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSequence.swift; sourceTree = "<group>"; };
+		1949420F214919FE00D207A3 /* NotStrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotStrategyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 		194941E32148AC2B00D207A3 /* GlSwiftStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1949420B21490E3500D207A3 /* StrategyModule */,
 				194941E42148AC2B00D207A3 /* AppDelegate.swift */,
 				194941E62148AC2B00D207A3 /* ViewController.swift */,
 				194941E82148AC2B00D207A3 /* Main.storyboard */,
@@ -62,6 +77,28 @@
 				194941F02148AC2D00D207A3 /* Info.plist */,
 			);
 			path = GlSwiftStudyDemo;
+			sourceTree = "<group>";
+		};
+		1949420B21490E3500D207A3 /* StrategyModule */ = {
+			isa = PBXGroup;
+			children = (
+				1949420C2149144600D207A3 /* GeneralSolution */,
+				194941FD2148EBDC00D207A3 /* Sequence.swift */,
+				194942012148F22E00D207A3 /* Strategy.swift */,
+				194942052148F2AD00D207A3 /* ClosureStrategy.swift */,
+				194942072148FE5B00D207A3 /* MultiplyStrategy.swift */,
+				1949420921490E0600D207A3 /* StrategyViewController.swift */,
+			);
+			path = StrategyModule;
+			sourceTree = "<group>";
+		};
+		1949420C2149144600D207A3 /* GeneralSolution */ = {
+			isa = PBXGroup;
+			children = (
+				1949420D2149150400D207A3 /* GeneralSequence.swift */,
+				1949420F214919FE00D207A3 /* NotStrategyViewController.swift */,
+			);
+			path = GeneralSolution;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				194941E72148AC2B00D207A3 /* ViewController.swift in Sources */,
+				194942022148F22E00D207A3 /* Strategy.swift in Sources */,
 				194941E52148AC2B00D207A3 /* AppDelegate.swift in Sources */,
+				1949420A21490E0600D207A3 /* StrategyViewController.swift in Sources */,
+				19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */,
+				194942082148FE5B00D207A3 /* MultiplyStrategy.swift in Sources */,
+				194941FE2148EBDC00D207A3 /* Sequence.swift in Sources */,
+				194942062148F2AD00D207A3 /* ClosureStrategy.swift in Sources */,
+				1949420E2149150400D207A3 /* GeneralSequence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
