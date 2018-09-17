@@ -19,6 +19,16 @@
 		1949420A21490E0600D207A3 /* StrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1949420921490E0600D207A3 /* StrategyViewController.swift */; };
 		1949420E2149150400D207A3 /* GeneralSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1949420D2149150400D207A3 /* GeneralSequence.swift */; };
 		19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1949420F214919FE00D207A3 /* NotStrategyViewController.swift */; };
+		194C8E4F2149F23A005AF7AD /* TableViewTopScaleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E4E2149F23A005AF7AD /* TableViewTopScaleImageViewController.swift */; };
+		194C8E522149F3F9005AF7AD /* CommConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E512149F3F9005AF7AD /* CommConst.swift */; };
+		194C8E542149F8FF005AF7AD /* GlTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E532149F8FF005AF7AD /* GlTableHeaderView.swift */; };
+		194C8E58214A04D3005AF7AD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E57214A04D3005AF7AD /* UIViewExtension.swift */; };
+		194C8E5B214A3395005AF7AD /* ICommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E5A214A3395005AF7AD /* ICommand.swift */; };
+		194C8E5D214A33F9005AF7AD /* ConcreteCommandA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E5C214A33F9005AF7AD /* ConcreteCommandA.swift */; };
+		194C8E5F214A3466005AF7AD /* Rceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E5E214A3466005AF7AD /* Rceiver.swift */; };
+		194C8E61214A369E005AF7AD /* ConcreateCommandB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E60214A369E005AF7AD /* ConcreateCommandB.swift */; };
+		194C8E63214A3763005AF7AD /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E62214A3763005AF7AD /* Invoker.swift */; };
+		194C8E65214A3826005AF7AD /* CommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E64214A3826005AF7AD /* CommandViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +46,16 @@
 		1949420921490E0600D207A3 /* StrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyViewController.swift; sourceTree = "<group>"; };
 		1949420D2149150400D207A3 /* GeneralSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSequence.swift; sourceTree = "<group>"; };
 		1949420F214919FE00D207A3 /* NotStrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotStrategyViewController.swift; sourceTree = "<group>"; };
+		194C8E4E2149F23A005AF7AD /* TableViewTopScaleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTopScaleImageViewController.swift; sourceTree = "<group>"; };
+		194C8E512149F3F9005AF7AD /* CommConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommConst.swift; sourceTree = "<group>"; };
+		194C8E532149F8FF005AF7AD /* GlTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlTableHeaderView.swift; sourceTree = "<group>"; };
+		194C8E57214A04D3005AF7AD /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		194C8E5A214A3395005AF7AD /* ICommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICommand.swift; sourceTree = "<group>"; };
+		194C8E5C214A33F9005AF7AD /* ConcreteCommandA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteCommandA.swift; sourceTree = "<group>"; };
+		194C8E5E214A3466005AF7AD /* Rceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rceiver.swift; sourceTree = "<group>"; };
+		194C8E60214A369E005AF7AD /* ConcreateCommandB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreateCommandB.swift; sourceTree = "<group>"; };
+		194C8E62214A3763005AF7AD /* Invoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoker.swift; sourceTree = "<group>"; };
+		194C8E64214A3826005AF7AD /* CommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +88,9 @@
 		194941E32148AC2B00D207A3 /* GlSwiftStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				194C8E59214A32F0005AF7AD /* CmdModule */,
+				194C8E502149F3AE005AF7AD /* Comm */,
+				194C8E4D2149EA4A005AF7AD /* TableModule */,
 				1949420B21490E3500D207A3 /* StrategyModule */,
 				194941E42148AC2B00D207A3 /* AppDelegate.swift */,
 				194941E62148AC2B00D207A3 /* ViewController.swift */,
@@ -99,6 +122,45 @@
 				1949420F214919FE00D207A3 /* NotStrategyViewController.swift */,
 			);
 			path = GeneralSolution;
+			sourceTree = "<group>";
+		};
+		194C8E4D2149EA4A005AF7AD /* TableModule */ = {
+			isa = PBXGroup;
+			children = (
+				194C8E4E2149F23A005AF7AD /* TableViewTopScaleImageViewController.swift */,
+				194C8E532149F8FF005AF7AD /* GlTableHeaderView.swift */,
+			);
+			path = TableModule;
+			sourceTree = "<group>";
+		};
+		194C8E502149F3AE005AF7AD /* Comm */ = {
+			isa = PBXGroup;
+			children = (
+				194C8E56214A04AD005AF7AD /* Extension */,
+				194C8E512149F3F9005AF7AD /* CommConst.swift */,
+			);
+			path = Comm;
+			sourceTree = "<group>";
+		};
+		194C8E56214A04AD005AF7AD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				194C8E57214A04D3005AF7AD /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		194C8E59214A32F0005AF7AD /* CmdModule */ = {
+			isa = PBXGroup;
+			children = (
+				194C8E5A214A3395005AF7AD /* ICommand.swift */,
+				194C8E5C214A33F9005AF7AD /* ConcreteCommandA.swift */,
+				194C8E5E214A3466005AF7AD /* Rceiver.swift */,
+				194C8E60214A369E005AF7AD /* ConcreateCommandB.swift */,
+				194C8E62214A3763005AF7AD /* Invoker.swift */,
+				194C8E64214A3826005AF7AD /* CommandViewController.swift */,
+			);
+			path = CmdModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,13 +236,23 @@
 			files = (
 				194941E72148AC2B00D207A3 /* ViewController.swift in Sources */,
 				194942022148F22E00D207A3 /* Strategy.swift in Sources */,
+				194C8E65214A3826005AF7AD /* CommandViewController.swift in Sources */,
 				194941E52148AC2B00D207A3 /* AppDelegate.swift in Sources */,
+				194C8E4F2149F23A005AF7AD /* TableViewTopScaleImageViewController.swift in Sources */,
 				1949420A21490E0600D207A3 /* StrategyViewController.swift in Sources */,
+				194C8E542149F8FF005AF7AD /* GlTableHeaderView.swift in Sources */,
+				194C8E5D214A33F9005AF7AD /* ConcreteCommandA.swift in Sources */,
+				194C8E522149F3F9005AF7AD /* CommConst.swift in Sources */,
+				194C8E63214A3763005AF7AD /* Invoker.swift in Sources */,
+				194C8E5F214A3466005AF7AD /* Rceiver.swift in Sources */,
 				19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */,
 				194942082148FE5B00D207A3 /* MultiplyStrategy.swift in Sources */,
+				194C8E58214A04D3005AF7AD /* UIViewExtension.swift in Sources */,
 				194941FE2148EBDC00D207A3 /* Sequence.swift in Sources */,
 				194942062148F2AD00D207A3 /* ClosureStrategy.swift in Sources */,
 				1949420E2149150400D207A3 /* GeneralSequence.swift in Sources */,
+				194C8E61214A369E005AF7AD /* ConcreateCommandB.swift in Sources */,
+				194C8E5B214A3395005AF7AD /* ICommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
