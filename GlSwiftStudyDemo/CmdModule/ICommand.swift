@@ -9,4 +9,5 @@
 import Foundation
 protocol ICommand {
     func execute()
+    func takeAStepBack()
 }

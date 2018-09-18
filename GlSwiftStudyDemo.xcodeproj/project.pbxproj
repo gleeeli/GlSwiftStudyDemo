@@ -24,11 +24,10 @@
 		194C8E542149F8FF005AF7AD /* GlTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E532149F8FF005AF7AD /* GlTableHeaderView.swift */; };
 		194C8E58214A04D3005AF7AD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E57214A04D3005AF7AD /* UIViewExtension.swift */; };
 		194C8E5B214A3395005AF7AD /* ICommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E5A214A3395005AF7AD /* ICommand.swift */; };
-		194C8E5D214A33F9005AF7AD /* ConcreteCommandA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E5C214A33F9005AF7AD /* ConcreteCommandA.swift */; };
 		194C8E5F214A3466005AF7AD /* Rceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E5E214A3466005AF7AD /* Rceiver.swift */; };
-		194C8E61214A369E005AF7AD /* ConcreateCommandB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E60214A369E005AF7AD /* ConcreateCommandB.swift */; };
 		194C8E63214A3763005AF7AD /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E62214A3763005AF7AD /* Invoker.swift */; };
 		194C8E65214A3826005AF7AD /* CommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E64214A3826005AF7AD /* CommandViewController.swift */; };
+		195BF7282150A669005A20ED /* GradientCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195BF7272150A669005A20ED /* GradientCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,11 +50,10 @@
 		194C8E532149F8FF005AF7AD /* GlTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlTableHeaderView.swift; sourceTree = "<group>"; };
 		194C8E57214A04D3005AF7AD /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		194C8E5A214A3395005AF7AD /* ICommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICommand.swift; sourceTree = "<group>"; };
-		194C8E5C214A33F9005AF7AD /* ConcreteCommandA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteCommandA.swift; sourceTree = "<group>"; };
 		194C8E5E214A3466005AF7AD /* Rceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rceiver.swift; sourceTree = "<group>"; };
-		194C8E60214A369E005AF7AD /* ConcreateCommandB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreateCommandB.swift; sourceTree = "<group>"; };
 		194C8E62214A3763005AF7AD /* Invoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoker.swift; sourceTree = "<group>"; };
 		194C8E64214A3826005AF7AD /* CommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandViewController.swift; sourceTree = "<group>"; };
+		195BF7272150A669005A20ED /* GradientCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,11 +152,10 @@
 			isa = PBXGroup;
 			children = (
 				194C8E5A214A3395005AF7AD /* ICommand.swift */,
-				194C8E5C214A33F9005AF7AD /* ConcreteCommandA.swift */,
 				194C8E5E214A3466005AF7AD /* Rceiver.swift */,
-				194C8E60214A369E005AF7AD /* ConcreateCommandB.swift */,
 				194C8E62214A3763005AF7AD /* Invoker.swift */,
 				194C8E64214A3826005AF7AD /* CommandViewController.swift */,
+				195BF7272150A669005A20ED /* GradientCommand.swift */,
 			);
 			path = CmdModule;
 			sourceTree = "<group>";
@@ -241,8 +238,8 @@
 				194C8E4F2149F23A005AF7AD /* TableViewTopScaleImageViewController.swift in Sources */,
 				1949420A21490E0600D207A3 /* StrategyViewController.swift in Sources */,
 				194C8E542149F8FF005AF7AD /* GlTableHeaderView.swift in Sources */,
-				194C8E5D214A33F9005AF7AD /* ConcreteCommandA.swift in Sources */,
 				194C8E522149F3F9005AF7AD /* CommConst.swift in Sources */,
+				195BF7282150A669005A20ED /* GradientCommand.swift in Sources */,
 				194C8E63214A3763005AF7AD /* Invoker.swift in Sources */,
 				194C8E5F214A3466005AF7AD /* Rceiver.swift in Sources */,
 				19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */,
@@ -251,7 +248,6 @@
 				194941FE2148EBDC00D207A3 /* Sequence.swift in Sources */,
 				194942062148F2AD00D207A3 /* ClosureStrategy.swift in Sources */,
 				1949420E2149150400D207A3 /* GeneralSequence.swift in Sources */,
-				194C8E61214A369E005AF7AD /* ConcreateCommandB.swift in Sources */,
 				194C8E5B214A3395005AF7AD /* ICommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
