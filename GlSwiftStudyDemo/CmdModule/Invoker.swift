@@ -27,6 +27,5 @@ class Invoker: NSObject {
             cmdArray?.removeLast();
             cmdArray?.last?.takeAStepBack()
         }
-        
     }
 }

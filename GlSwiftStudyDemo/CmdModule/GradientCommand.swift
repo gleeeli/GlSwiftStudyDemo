@@ -11,6 +11,7 @@ import UIKit
 class GradientCommand: ICommand {
     var receiver: Rceiver?;
     var colors : [CGColor]?
+    var startTime: TimeInterval?
     
     init(receiver: Rceiver, colors:[CGColor]) {
         self.receiver = receiver;
@@ -18,6 +19,7 @@ class GradientCommand: ICommand {
     }
     
     func execute() {
+        startTime = NSDate().timeIntervalSince1970
         self.receiver?.DoGradientAnimation(colors: colors!);
     }
     

@@ -8,6 +8,14 @@
 
 import Foundation
 protocol ICommand {
+//    var startTime: TimeInterval?{
+//        get {
+//        return 0
+//        }
+//        set {
+//        startTime = newValue
+//        }
+//    }
     func execute()
     func takeAStepBack()
 }

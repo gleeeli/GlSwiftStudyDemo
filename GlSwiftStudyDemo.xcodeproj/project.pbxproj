@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192084C3221503310065813B /* OpenGlSimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192084C2221503310065813B /* OpenGlSimpleViewController.swift */; };
+		192084C72215039C0065813B /* OpenglSimpleDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 192084C52215039C0065813B /* OpenglSimpleDemo.cpp */; };
+		192084CA221507860065813B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192084C9221507860065813B /* OpenGLES.framework */; };
+		19441E9921523D9C00663E1D /* Spreadsheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19441E9821523D9C00663E1D /* Spreadsheet.swift */; };
 		194941E52148AC2B00D207A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194941E42148AC2B00D207A3 /* AppDelegate.swift */; };
 		194941E72148AC2B00D207A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194941E62148AC2B00D207A3 /* ViewController.swift */; };
 		194941EA2148AC2B00D207A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194941E82148AC2B00D207A3 /* Main.storyboard */; };
@@ -28,9 +32,17 @@
 		194C8E63214A3763005AF7AD /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E62214A3763005AF7AD /* Invoker.swift */; };
 		194C8E65214A3826005AF7AD /* CommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C8E64214A3826005AF7AD /* CommandViewController.swift */; };
 		195BF7282150A669005A20ED /* GradientCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195BF7272150A669005A20ED /* GradientCommand.swift */; };
+		197B4F192213FE110034055B /* ThrowExceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B4F182213FE110034055B /* ThrowExceptViewController.swift */; };
+		197B4F1C2213FE830034055B /* TEVendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B4F1B2213FE830034055B /* TEVendingMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		192084C2221503310065813B /* OpenGlSimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGlSimpleViewController.swift; sourceTree = "<group>"; };
+		192084C42215039B0065813B /* GlSwiftStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlSwiftStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		192084C52215039C0065813B /* OpenglSimpleDemo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenglSimpleDemo.cpp; sourceTree = "<group>"; };
+		192084C62215039C0065813B /* OpenglSimpleDemo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenglSimpleDemo.hpp; sourceTree = "<group>"; };
+		192084C9221507860065813B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		19441E9821523D9C00663E1D /* Spreadsheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spreadsheet.swift; sourceTree = "<group>"; };
 		194941E12148AC2B00D207A3 /* GlSwiftStudyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlSwiftStudyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		194941E42148AC2B00D207A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		194941E62148AC2B00D207A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +66,8 @@
 		194C8E62214A3763005AF7AD /* Invoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoker.swift; sourceTree = "<group>"; };
 		194C8E64214A3826005AF7AD /* CommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandViewController.swift; sourceTree = "<group>"; };
 		195BF7272150A669005A20ED /* GradientCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCommand.swift; sourceTree = "<group>"; };
+		197B4F182213FE110034055B /* ThrowExceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowExceptViewController.swift; sourceTree = "<group>"; };
+		197B4F1B2213FE830034055B /* TEVendingMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEVendingMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +75,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192084CA221507860065813B /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		192084C1221503020065813B /* OpenGl */ = {
+			isa = PBXGroup;
+			children = (
+				192084C2221503310065813B /* OpenGlSimpleViewController.swift */,
+				192084C52215039C0065813B /* OpenglSimpleDemo.cpp */,
+				192084C62215039C0065813B /* OpenglSimpleDemo.hpp */,
+				192084C42215039B0065813B /* GlSwiftStudyDemo-Bridging-Header.h */,
+			);
+			path = OpenGl;
+			sourceTree = "<group>";
+		};
+		192084C8221507860065813B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				192084C9221507860065813B /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19441E9721523D2E00663E1D /* FlyweightModule */ = {
+			isa = PBXGroup;
+			children = (
+				19441E9821523D9C00663E1D /* Spreadsheet.swift */,
+			);
+			path = FlyweightModule;
+			sourceTree = "<group>";
+		};
 		194941D82148AC2B00D207A3 = {
 			isa = PBXGroup;
 			children = (
 				194941E32148AC2B00D207A3 /* GlSwiftStudyDemo */,
 				194941E22148AC2B00D207A3 /* Products */,
+				192084C8221507860065813B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +129,8 @@
 		194941E32148AC2B00D207A3 /* GlSwiftStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				192084C1221503020065813B /* OpenGl */,
+				19441E9721523D2E00663E1D /* FlyweightModule */,
 				194C8E59214A32F0005AF7AD /* CmdModule */,
 				194C8E502149F3AE005AF7AD /* Comm */,
 				194C8E4D2149EA4A005AF7AD /* TableModule */,
@@ -134,6 +179,7 @@
 		194C8E502149F3AE005AF7AD /* Comm */ = {
 			isa = PBXGroup;
 			children = (
+				197B4F1A2213FE5C0034055B /* ThrowException */,
 				194C8E56214A04AD005AF7AD /* Extension */,
 				194C8E512149F3F9005AF7AD /* CommConst.swift */,
 			);
@@ -158,6 +204,15 @@
 				195BF7272150A669005A20ED /* GradientCommand.swift */,
 			);
 			path = CmdModule;
+			sourceTree = "<group>";
+		};
+		197B4F1A2213FE5C0034055B /* ThrowException */ = {
+			isa = PBXGroup;
+			children = (
+				197B4F182213FE110034055B /* ThrowExceptViewController.swift */,
+				197B4F1B2213FE830034055B /* TEVendingMachine.swift */,
+			);
+			path = ThrowException;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +247,7 @@
 				TargetAttributes = {
 					194941E02148AC2B00D207A3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -232,16 +288,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				194941E72148AC2B00D207A3 /* ViewController.swift in Sources */,
+				192084C72215039C0065813B /* OpenglSimpleDemo.cpp in Sources */,
 				194942022148F22E00D207A3 /* Strategy.swift in Sources */,
 				194C8E65214A3826005AF7AD /* CommandViewController.swift in Sources */,
 				194941E52148AC2B00D207A3 /* AppDelegate.swift in Sources */,
 				194C8E4F2149F23A005AF7AD /* TableViewTopScaleImageViewController.swift in Sources */,
 				1949420A21490E0600D207A3 /* StrategyViewController.swift in Sources */,
+				197B4F192213FE110034055B /* ThrowExceptViewController.swift in Sources */,
 				194C8E542149F8FF005AF7AD /* GlTableHeaderView.swift in Sources */,
 				194C8E522149F3F9005AF7AD /* CommConst.swift in Sources */,
 				195BF7282150A669005A20ED /* GradientCommand.swift in Sources */,
 				194C8E63214A3763005AF7AD /* Invoker.swift in Sources */,
 				194C8E5F214A3466005AF7AD /* Rceiver.swift in Sources */,
+				197B4F1C2213FE830034055B /* TEVendingMachine.swift in Sources */,
+				19441E9921523D9C00663E1D /* Spreadsheet.swift in Sources */,
+				192084C3221503310065813B /* OpenGlSimpleViewController.swift in Sources */,
 				19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */,
 				194942082148FE5B00D207A3 /* MultiplyStrategy.swift in Sources */,
 				194C8E58214A04D3005AF7AD /* UIViewExtension.swift in Sources */,
@@ -392,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GlSwiftStudyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -400,6 +462,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gleeeli.GlSwiftStudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GlSwiftStudyDemo/OpenGl/GlSwiftStudyDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GlSwiftStudyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -417,6 +482,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gleeeli.GlSwiftStudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GlSwiftStudyDemo/OpenGl/GlSwiftStudyDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
