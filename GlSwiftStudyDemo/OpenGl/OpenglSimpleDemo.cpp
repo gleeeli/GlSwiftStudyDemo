@@ -2,7 +2,7 @@
 //  OpenglSimpleDemo.cpp
 //  GlSwiftStudyDemo
 //
-//  Created by 小柠檬 on 2019/2/14.
+//  Created by gleeeli on 2019/2/14.
 //  Copyright © 2019年 gleeeli. All rights reserved.
 //
 #ifndef SHADER_H

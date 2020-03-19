@@ -2,7 +2,7 @@
 //  TableViewTopScaleImageViewController.swift
 //  GlSwiftStudyDemo
 //
-//  Created by 小柠檬 on 2018/9/13.
+//  Created by gleeeli on 2018/9/13.
 //  Copyright © 2018年 gleeeli. All rights reserved.
 //
 
