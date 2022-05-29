@@ -37,6 +37,7 @@
 		212BB304242331BC00A3247F /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212BB303242331BC00A3247F /* BlockViewController.swift */; };
 		419B64FF2830A55E001A2587 /* RxExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B64FE2830A55E001A2587 /* RxExampleViewController.swift */; };
 		419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419DFFE128422D3E00D20740 /* DateViewController.swift */; };
+		41CA771728436F9400533162 /* StringAndAttributeTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */; };
 		F7FC550C61730024213FB6CF /* Pods_GlSwiftStudyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A97B3446B4D80CFE4BC10B /* Pods_GlSwiftStudyDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		35B3C2B59D34E8E2C4D4E85A /* Pods-GlSwiftStudyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.release.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		419B64FE2830A55E001A2587 /* RxExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxExampleViewController.swift; sourceTree = "<group>"; };
 		419DFFE128422D3E00D20740 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAndAttributeTextVC.swift; sourceTree = "<group>"; };
 		B8A97B3446B4D80CFE4BC10B /* Pods_GlSwiftStudyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlSwiftStudyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB15E6984E2332E05CB86C17 /* Pods-GlSwiftStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.debug.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +245,7 @@
 			children = (
 				419B64FE2830A55E001A2587 /* RxExampleViewController.swift */,
 				419DFFE128422D3E00D20740 /* DateViewController.swift */,
+				41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				192084C3221503310065813B /* OpenGlSimpleViewController.swift in Sources */,
 				19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */,
 				419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */,
+				41CA771728436F9400533162 /* StringAndAttributeTextVC.swift in Sources */,
 				194942082148FE5B00D207A3 /* MultiplyStrategy.swift in Sources */,
 				194C8E58214A04D3005AF7AD /* UIViewExtension.swift in Sources */,
 				194941FE2148EBDC00D207A3 /* Sequence.swift in Sources */,
