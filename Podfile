@@ -1,4 +1,5 @@
  source ‘https://github.com/CocoaPods/Specs.git’
+# source ‘https://gitee.com/gleeeli/SwiftDevelopComm.git’
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
@@ -8,5 +9,9 @@ target 'GlSwiftStudyDemo' do
 
   # Pods for GlSwiftStudyDemo
 pod 'Alamofire', '~> 5.0'
+pod 'SwiftDevelopComm',:git => 'https://gitee.com/gleeeli/SwiftDevelopComm.git'
+pod 'RxSwift', '~> 5'
+pod 'RxCocoa', '~> 5'
+pod 'SnapKit'
 
 end

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,6 +35,8 @@
 		197B4F192213FE110034055B /* ThrowExceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B4F182213FE110034055B /* ThrowExceptViewController.swift */; };
 		197B4F1C2213FE830034055B /* TEVendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B4F1B2213FE830034055B /* TEVendingMachine.swift */; };
 		212BB304242331BC00A3247F /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212BB303242331BC00A3247F /* BlockViewController.swift */; };
+		419B64FF2830A55E001A2587 /* RxExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B64FE2830A55E001A2587 /* RxExampleViewController.swift */; };
+		419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419DFFE128422D3E00D20740 /* DateViewController.swift */; };
 		F7FC550C61730024213FB6CF /* Pods_GlSwiftStudyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A97B3446B4D80CFE4BC10B /* Pods_GlSwiftStudyDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		197B4F1B2213FE830034055B /* TEVendingMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEVendingMachine.swift; sourceTree = "<group>"; };
 		212BB303242331BC00A3247F /* BlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
 		35B3C2B59D34E8E2C4D4E85A /* Pods-GlSwiftStudyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.release.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		419B64FE2830A55E001A2587 /* RxExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxExampleViewController.swift; sourceTree = "<group>"; };
+		419DFFE128422D3E00D20740 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		B8A97B3446B4D80CFE4BC10B /* Pods_GlSwiftStudyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlSwiftStudyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB15E6984E2332E05CB86C17 /* Pods-GlSwiftStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.debug.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +142,7 @@
 		194941E32148AC2B00D207A3 /* GlSwiftStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				419B64FD2830A546001A2587 /* Example */,
 				192084C1221503020065813B /* OpenGl */,
 				19441E9721523D2E00663E1D /* FlyweightModule */,
 				194C8E59214A32F0005AF7AD /* CmdModule */,
@@ -233,13 +238,21 @@
 			path = BaseGrammar;
 			sourceTree = "<group>";
 		};
+		419B64FD2830A546001A2587 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				419B64FE2830A55E001A2587 /* RxExampleViewController.swift */,
+				419DFFE128422D3E00D20740 /* DateViewController.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		5678E22C97815EF1D5315559 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				BB15E6984E2332E05CB86C17 /* Pods-GlSwiftStudyDemo.debug.xcconfig */,
 				35B3C2B59D34E8E2C4D4E85A /* Pods-GlSwiftStudyDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -362,6 +375,7 @@
 				194941E72148AC2B00D207A3 /* ViewController.swift in Sources */,
 				192084C72215039C0065813B /* OpenglSimpleDemo.cpp in Sources */,
 				194942022148F22E00D207A3 /* Strategy.swift in Sources */,
+				419B64FF2830A55E001A2587 /* RxExampleViewController.swift in Sources */,
 				194C8E65214A3826005AF7AD /* CommandViewController.swift in Sources */,
 				194941E52148AC2B00D207A3 /* AppDelegate.swift in Sources */,
 				194C8E4F2149F23A005AF7AD /* TableViewTopScaleImageViewController.swift in Sources */,
@@ -376,6 +390,7 @@
 				19441E9921523D9C00663E1D /* Spreadsheet.swift in Sources */,
 				192084C3221503310065813B /* OpenGlSimpleViewController.swift in Sources */,
 				19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */,
+				419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */,
 				194942082148FE5B00D207A3 /* MultiplyStrategy.swift in Sources */,
 				194C8E58214A04D3005AF7AD /* UIViewExtension.swift in Sources */,
 				194941FE2148EBDC00D207A3 /* Sequence.swift in Sources */,

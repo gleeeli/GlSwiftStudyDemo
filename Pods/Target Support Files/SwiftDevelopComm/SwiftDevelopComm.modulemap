@@ -1,0 +1,6 @@
+framework module SwiftDevelopComm {
+  umbrella header "SwiftDevelopComm-umbrella.h"
+
+  export *
+  module * { export * }
+}
