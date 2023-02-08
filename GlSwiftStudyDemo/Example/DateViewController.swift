@@ -32,37 +32,42 @@ class DateViewController: UIViewController {
 //
 //        print("dateStr2:\(dateStr2)")
 //
-        dateParse()
+        testExample()
     }
     
-    func dateParse() {
+    func testExample() {
+        
+        let startdate = getTodayStartDate(date: Date())// 2022-05-28 16:00:00 +0000
+        // 标准Date转本地时区字符串
+        let dateStr = getDateStrFromDate(date: startdate, format: "yyyy-MM-dd HH:mm:ss")
+        print("今天北京开始时间转字符串：\(dateStr)")// 2022-05-29 00:00:00
+    }
+    
+    //获某天的起始时间也就是：如：2022-05-29 00:00:00
+    func getTodayStartDate(date: Date) -> Date {
         //开始时间
         var calendar = NSCalendar.current
         calendar.timeZone = NSTimeZone.local
-        let dateAtMidnight = calendar.startOfDay(for: Date())
+        let dateAtMidnight:Date = calendar.startOfDay(for: date)
         print(dateAtMidnight)
         print("当天开始时间：\(dateAtMidnight)")
-        
-        let dateStr = getDateStrFromDate(date: dateAtMidnight, format: "yyyy-MM-dd HH:mm:ss")
-        print("今天开始时间转字符串：\(dateStr)")
+        return dateAtMidnight
     }
     
 
     //获取当前时间戳
     func getNowTimeInterval() -> TimeInterval {
         let today = Date()// 获取格林威治时间（GMT）/ 标准时间
-
         print("today = \(today)")// 打印出的时间是GTM时间，比北京时间早了8个小时
-        
         return Date().timeIntervalSince1970
     }
     
-    //获取当前时间戳
+    //时间戳转Date
     func getDateFromTimeInterval(time:TimeInterval) -> Date {
         return Date(timeIntervalSince1970: time)
     }
     
-    //Date转字符串 yyyy-MM-dd HH:mm:ss
+    //Date转字符串 yyyy-MM-dd HH:mm:ss,将ugc日期转本地时区
     func getDateStrFromDate(date:Date,format:String) -> String {
         let dateformatter = DateFormatter()//自定义日期格式
         dateformatter.dateFormat = format

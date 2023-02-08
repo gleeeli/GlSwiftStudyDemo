@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C9AB0C2D-E504-4420-992C-78216D8FCA80"
+            uuid = "8CEDAE3A-1A9B-49A1-895E-F181439F36DC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GlSwiftStudyDemo/Example/RxExampleViewController.swift"
+            filePath = "GlSwiftStudyDemo/Example/StringAndAttributeTextVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "testDriver()"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "test3()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

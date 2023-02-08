@@ -37,6 +37,15 @@
 		212BB304242331BC00A3247F /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212BB303242331BC00A3247F /* BlockViewController.swift */; };
 		419B64FF2830A55E001A2587 /* RxExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B64FE2830A55E001A2587 /* RxExampleViewController.swift */; };
 		419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419DFFE128422D3E00D20740 /* DateViewController.swift */; };
+		41A8290A29933F09006B1215 /* Globa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8290729933F09006B1215 /* Globa.swift */; };
+		41A8290B29933F09006B1215 /* ZXFCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8290829933F09006B1215 /* ZXFCardsVC.swift */; };
+		41A8290C29933F09006B1215 /* ZXFCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8290929933F09006B1215 /* ZXFCardView.swift */; };
+		41A8291329933F15006B1215 /* bgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8290D29933F15006B1215 /* bgImage.jpg */; };
+		41A8291429933F15006B1215 /* card1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8290E29933F15006B1215 /* card1.jpg */; };
+		41A8291529933F15006B1215 /* card3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8290F29933F15006B1215 /* card3.jpg */; };
+		41A8291629933F15006B1215 /* card4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8291029933F15006B1215 /* card4.jpg */; };
+		41A8291729933F15006B1215 /* card2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8291129933F15006B1215 /* card2.jpg */; };
+		41A8291829933F15006B1215 /* card5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8291229933F15006B1215 /* card5.jpg */; };
 		41CA771728436F9400533162 /* StringAndAttributeTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */; };
 		F7FC550C61730024213FB6CF /* Pods_GlSwiftStudyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A97B3446B4D80CFE4BC10B /* Pods_GlSwiftStudyDemo.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +86,15 @@
 		35B3C2B59D34E8E2C4D4E85A /* Pods-GlSwiftStudyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.release.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		419B64FE2830A55E001A2587 /* RxExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxExampleViewController.swift; sourceTree = "<group>"; };
 		419DFFE128422D3E00D20740 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		41A8290729933F09006B1215 /* Globa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globa.swift; sourceTree = "<group>"; };
+		41A8290829933F09006B1215 /* ZXFCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXFCardsVC.swift; sourceTree = "<group>"; };
+		41A8290929933F09006B1215 /* ZXFCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXFCardView.swift; sourceTree = "<group>"; };
+		41A8290D29933F15006B1215 /* bgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgImage.jpg; sourceTree = "<group>"; };
+		41A8290E29933F15006B1215 /* card1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card1.jpg; sourceTree = "<group>"; };
+		41A8290F29933F15006B1215 /* card3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card3.jpg; sourceTree = "<group>"; };
+		41A8291029933F15006B1215 /* card4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card4.jpg; sourceTree = "<group>"; };
+		41A8291129933F15006B1215 /* card2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card2.jpg; sourceTree = "<group>"; };
+		41A8291229933F15006B1215 /* card5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card5.jpg; sourceTree = "<group>"; };
 		41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAndAttributeTextVC.swift; sourceTree = "<group>"; };
 		B8A97B3446B4D80CFE4BC10B /* Pods_GlSwiftStudyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlSwiftStudyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB15E6984E2332E05CB86C17 /* Pods-GlSwiftStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.debug.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -243,11 +261,36 @@
 		419B64FD2830A546001A2587 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				41A8290629933EE6006B1215 /* AnimatePage */,
 				419B64FE2830A55E001A2587 /* RxExampleViewController.swift */,
 				419DFFE128422D3E00D20740 /* DateViewController.swift */,
 				41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		41A8290629933EE6006B1215 /* AnimatePage */ = {
+			isa = PBXGroup;
+			children = (
+				41A8291929933F19006B1215 /* images */,
+				41A8290729933F09006B1215 /* Globa.swift */,
+				41A8290829933F09006B1215 /* ZXFCardsVC.swift */,
+				41A8290929933F09006B1215 /* ZXFCardView.swift */,
+			);
+			path = AnimatePage;
+			sourceTree = "<group>";
+		};
+		41A8291929933F19006B1215 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				41A8290D29933F15006B1215 /* bgImage.jpg */,
+				41A8290E29933F15006B1215 /* card1.jpg */,
+				41A8291129933F15006B1215 /* card2.jpg */,
+				41A8290F29933F15006B1215 /* card3.jpg */,
+				41A8291029933F15006B1215 /* card4.jpg */,
+				41A8291229933F15006B1215 /* card5.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		5678E22C97815EF1D5315559 /* Pods */ = {
@@ -321,7 +364,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				194941EF2148AC2D00D207A3 /* LaunchScreen.storyboard in Resources */,
+				41A8291529933F15006B1215 /* card3.jpg in Resources */,
 				194941EC2148AC2D00D207A3 /* Assets.xcassets in Resources */,
+				41A8291329933F15006B1215 /* bgImage.jpg in Resources */,
+				41A8291729933F15006B1215 /* card2.jpg in Resources */,
+				41A8291629933F15006B1215 /* card4.jpg in Resources */,
+				41A8291429933F15006B1215 /* card1.jpg in Resources */,
+				41A8291829933F15006B1215 /* card5.jpg in Resources */,
 				194941EA2148AC2B00D207A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +435,7 @@
 				197B4F192213FE110034055B /* ThrowExceptViewController.swift in Sources */,
 				194C8E542149F8FF005AF7AD /* GlTableHeaderView.swift in Sources */,
 				194C8E522149F3F9005AF7AD /* CommConst.swift in Sources */,
+				41A8290B29933F09006B1215 /* ZXFCardsVC.swift in Sources */,
 				195BF7282150A669005A20ED /* GradientCommand.swift in Sources */,
 				194C8E63214A3763005AF7AD /* Invoker.swift in Sources */,
 				194C8E5F214A3466005AF7AD /* Rceiver.swift in Sources */,
@@ -395,6 +445,7 @@
 				19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */,
 				419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */,
 				41CA771728436F9400533162 /* StringAndAttributeTextVC.swift in Sources */,
+				41A8290C29933F09006B1215 /* ZXFCardView.swift in Sources */,
 				194942082148FE5B00D207A3 /* MultiplyStrategy.swift in Sources */,
 				194C8E58214A04D3005AF7AD /* UIViewExtension.swift in Sources */,
 				194941FE2148EBDC00D207A3 /* Sequence.swift in Sources */,
@@ -402,6 +453,7 @@
 				1949420E2149150400D207A3 /* GeneralSequence.swift in Sources */,
 				212BB304242331BC00A3247F /* BlockViewController.swift in Sources */,
 				194C8E5B214A3395005AF7AD /* ICommand.swift in Sources */,
+				41A8290A29933F09006B1215 /* Globa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

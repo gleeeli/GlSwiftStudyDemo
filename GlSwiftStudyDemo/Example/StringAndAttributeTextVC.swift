@@ -9,17 +9,57 @@
 import UIKit
 
 class StringAndAttributeTextVC: UIViewController {
+    var uploadModuleUUids:[String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+       let color = getSeriviceColor(colorStr: "#FF7AD479")
+        
+        let view = UIView(frame: CGRect(x: 10, y: 100, width: 100, height: 50))
+        self.view.addSubview(view)
+        
+        view.backgroundColor = color
+        
+//        test3()
+        self.uploadModuleUUids.append("test0_789")
+        self.uploadModuleUUids.append("test1_789")
+        self.uploadModuleUUids.append("test1_788")
+        print("\(self.uploadModuleUUids)")
+        print("------")
+        test4(moduleUuid: "test1")
+        print("\(self.uploadModuleUUids)")
+    }
+    
+    func test4(moduleUuid: String) {
+        let newarray = self.uploadModuleUUids.filter { elem in
+            return elem.contains(moduleUuid)
+        }
+        self.uploadModuleUUids = newarray
+    }
+    
+    func test3() {
+        let nowTime = Date().timeIntervalSince1970
+        let enStr = "1 660 318 930"
+        let endTime: TimeInterval = TimeInterval(enStr) ?? 0
+        let interval: TimeInterval = endTime - nowTime
+        print("开始倒计时\(interval)秒")
+    }
+    
+    func stringtest() {
         print("------StringAndAttributeTextVC")
         let allText = "这是测试文本gleeeli的测试day...Hello"
         
-        
-//        let keyWordRange = allText.range(of: "测试")
-//        let keyWordRange = allText.range(of:"测试", options: .backwards)//反向检索
-//        let keyWordRange = allText.range(of:"day", options: .caseInsensitive, range:nil , locale:nil)//忽略大小写
-        let set = CharacterSet(charactersIn: "测试")
-        let keyWordRange: Range<String.Index>? = allText.rangeOfCharacter(from: set)
+        //方案1
+        let keyWordRange = allText.range(of: "测试")
+        //方案2
+        //let keyWordRange = allText.range(of:"测试", options: .backwards)//反向检索
+        //方案3
+        //let keyWordRange = allText.range(of:"day", options: .caseInsensitive, range:nil , locale:nil)//忽略大小写
+        //方案4
+        //let set = CharacterSet(charactersIn: "测试")
+        //let keyWordRange: Range<String.Index>? = allText.rangeOfCharacter(from: set)
         
         guard let keyWordRange = keyWordRange else {
             print("关键字未找到。。。")
@@ -48,10 +88,23 @@ class StringAndAttributeTextVC: UIViewController {
         
         print("关键字到最后少一位的:\(fromKeyToEndReduceOne)")
         
-        regexFindString()
+//        regexFindString()
+    }
+    
+    func getSeriviceColor(colorStr: String) -> UIColor? {
+        var nowStr = colorStr.replacingOccurrences(of: "#", with: "")
+        if nowStr.count == 8 {
+            nowStr = String(nowStr.suffix(6))
+            return UIColor.init(hexString: "\(nowStr)")
+        }else if nowStr.count == 6 {
+            return UIColor.init(hexString: nowStr)
+        }
+        return nil
     }
     
     
+    
+    //正则方案1
     func regexFindString() {
         let allText = "http://lifusc148387@qq.com.jpg"
         let rangeindex = allText.range(of: "[0-9]{4}", options: .regularExpression, range: allText.startIndex..<allText.endIndex, locale:Locale.current)
@@ -170,3 +223,28 @@ class StringAndAttributeTextVC: UIViewController {
 //    }
 //
 //}
+
+
+public extension UIColor {
+    
+    /**
+     * UIColor的扩展类 将16进制颜色转换为RGB
+     * @param hexString 16进制颜色字符串
+     */
+    convenience init(hexString: String) {
+        let scanner:Scanner = Scanner(string:hexString)
+        var valueRGB:UInt32 = 0
+        if scanner.scanHexInt32(&valueRGB) == false {
+            self.init(red: 0,green: 0,blue: 0,alpha: 0)
+        }else{
+            self.init(
+                red:CGFloat((valueRGB & 0xFF0000)>>16)/255.0,
+                green:CGFloat((valueRGB & 0x00FF00)>>8)/255.0,
+                blue:CGFloat(valueRGB & 0x0000FF)/255.0,
+                alpha:CGFloat(1.0)
+            )
+        }
+    }
+    
+    
+}

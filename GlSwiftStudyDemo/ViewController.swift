@@ -13,7 +13,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT), style: .grouped);
 //    var titles = [String]()
-    var titles = ["策略模式","非策略模式的普通方式实现","tableview的顶部刷新","命令模式","异常","block使用","RxSwift使用","日期","字符串和富文本"]
+    var titles = ["策略模式","非策略模式的普通方式实现","tableview的顶部刷新","命令模式","异常","block使用","RxSwift使用","日期","字符串和富文本","翻页效果"]
     
     
 
@@ -95,6 +95,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             self.navigationController?.pushViewController(vc, animated: true)
         }else if content == "字符串和富文本" {
             let vc = StringAndAttributeTextVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if content == "翻页效果" {
+            let vc = ZXFCardsVC()
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
