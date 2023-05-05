@@ -35,8 +35,13 @@
 		197B4F192213FE110034055B /* ThrowExceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B4F182213FE110034055B /* ThrowExceptViewController.swift */; };
 		197B4F1C2213FE830034055B /* TEVendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B4F1B2213FE830034055B /* TEVendingMachine.swift */; };
 		212BB304242331BC00A3247F /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212BB303242331BC00A3247F /* BlockViewController.swift */; };
+		414EF17329B316950033EBB1 /* GunDongSelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EF17229B316950033EBB1 /* GunDongSelViewController.swift */; };
+		416C9F9429AB3828008946DA /* BlurEffectExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416C9F9329AB3828008946DA /* BlurEffectExampleViewController.swift */; };
 		419B64FF2830A55E001A2587 /* RxExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B64FE2830A55E001A2587 /* RxExampleViewController.swift */; };
 		419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419DFFE128422D3E00D20740 /* DateViewController.swift */; };
+		41A7274B29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7274A29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift */; };
+		41A7274D29B6D5D000F70F4F /* NSAttributedString+PPUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7274C29B6D5D000F70F4F /* NSAttributedString+PPUIKit.swift */; };
+		41A7276029B6F53900F70F4F /* UIColor+PPUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7275F29B6F53900F70F4F /* UIColor+PPUIKit.swift */; };
 		41A8290A29933F09006B1215 /* Globa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8290729933F09006B1215 /* Globa.swift */; };
 		41A8290B29933F09006B1215 /* ZXFCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8290829933F09006B1215 /* ZXFCardsVC.swift */; };
 		41A8290C29933F09006B1215 /* ZXFCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8290929933F09006B1215 /* ZXFCardView.swift */; };
@@ -47,6 +52,8 @@
 		41A8291729933F15006B1215 /* card2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8291129933F15006B1215 /* card2.jpg */; };
 		41A8291829933F15006B1215 /* card5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8291229933F15006B1215 /* card5.jpg */; };
 		41CA771728436F9400533162 /* StringAndAttributeTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */; };
+		41EB67502A04ABC5009E992E /* ObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EB674F2A04ABC5009E992E /* ObjectiveCViewController.m */; };
+		41F057F929B8705F00667032 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F057F829B8705F00667032 /* LottieViewController.swift */; };
 		F7FC550C61730024213FB6CF /* Pods_GlSwiftStudyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A97B3446B4D80CFE4BC10B /* Pods_GlSwiftStudyDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,8 +91,13 @@
 		197B4F1B2213FE830034055B /* TEVendingMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEVendingMachine.swift; sourceTree = "<group>"; };
 		212BB303242331BC00A3247F /* BlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
 		35B3C2B59D34E8E2C4D4E85A /* Pods-GlSwiftStudyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.release.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		414EF17229B316950033EBB1 /* GunDongSelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunDongSelViewController.swift; sourceTree = "<group>"; };
+		416C9F9329AB3828008946DA /* BlurEffectExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectExampleViewController.swift; sourceTree = "<group>"; };
 		419B64FE2830A55E001A2587 /* RxExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxExampleViewController.swift; sourceTree = "<group>"; };
 		419DFFE128422D3E00D20740 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		41A7274A29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCycleScrollViewViewController.swift; sourceTree = "<group>"; };
+		41A7274C29B6D5D000F70F4F /* NSAttributedString+PPUIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+PPUIKit.swift"; sourceTree = "<group>"; };
+		41A7275F29B6F53900F70F4F /* UIColor+PPUIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+PPUIKit.swift"; path = "Extension/UIColor+PPUIKit.swift"; sourceTree = "<group>"; };
 		41A8290729933F09006B1215 /* Globa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globa.swift; sourceTree = "<group>"; };
 		41A8290829933F09006B1215 /* ZXFCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXFCardsVC.swift; sourceTree = "<group>"; };
 		41A8290929933F09006B1215 /* ZXFCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXFCardView.swift; sourceTree = "<group>"; };
@@ -96,6 +108,9 @@
 		41A8291129933F15006B1215 /* card2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card2.jpg; sourceTree = "<group>"; };
 		41A8291229933F15006B1215 /* card5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card5.jpg; sourceTree = "<group>"; };
 		41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAndAttributeTextVC.swift; sourceTree = "<group>"; };
+		41EB674E2A04ABC5009E992E /* ObjectiveCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCViewController.h; sourceTree = "<group>"; };
+		41EB674F2A04ABC5009E992E /* ObjectiveCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCViewController.m; sourceTree = "<group>"; };
+		41F057F829B8705F00667032 /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 		B8A97B3446B4D80CFE4BC10B /* Pods_GlSwiftStudyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlSwiftStudyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB15E6984E2332E05CB86C17 /* Pods-GlSwiftStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.debug.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,10 +228,12 @@
 		194C8E502149F3AE005AF7AD /* Comm */ = {
 			isa = PBXGroup;
 			children = (
+				41A7275F29B6F53900F70F4F /* UIColor+PPUIKit.swift */,
 				212BB3022423318800A3247F /* BaseGrammar */,
 				197B4F1A2213FE5C0034055B /* ThrowException */,
 				194C8E56214A04AD005AF7AD /* Extension */,
 				194C8E512149F3F9005AF7AD /* CommConst.swift */,
+				41A7274C29B6D5D000F70F4F /* NSAttributedString+PPUIKit.swift */,
 			);
 			path = Comm;
 			sourceTree = "<group>";
@@ -265,6 +282,12 @@
 				419B64FE2830A55E001A2587 /* RxExampleViewController.swift */,
 				419DFFE128422D3E00D20740 /* DateViewController.swift */,
 				41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */,
+				416C9F9329AB3828008946DA /* BlurEffectExampleViewController.swift */,
+				414EF17229B316950033EBB1 /* GunDongSelViewController.swift */,
+				41A7274A29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift */,
+				41F057F829B8705F00667032 /* LottieViewController.swift */,
+				41EB674E2A04ABC5009E992E /* ObjectiveCViewController.h */,
+				41EB674F2A04ABC5009E992E /* ObjectiveCViewController.m */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -426,8 +449,10 @@
 			files = (
 				194941E72148AC2B00D207A3 /* ViewController.swift in Sources */,
 				192084C72215039C0065813B /* OpenglSimpleDemo.cpp in Sources */,
+				41A7274D29B6D5D000F70F4F /* NSAttributedString+PPUIKit.swift in Sources */,
 				194942022148F22E00D207A3 /* Strategy.swift in Sources */,
 				419B64FF2830A55E001A2587 /* RxExampleViewController.swift in Sources */,
+				41A7274B29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift in Sources */,
 				194C8E65214A3826005AF7AD /* CommandViewController.swift in Sources */,
 				194941E52148AC2B00D207A3 /* AppDelegate.swift in Sources */,
 				194C8E4F2149F23A005AF7AD /* TableViewTopScaleImageViewController.swift in Sources */,
@@ -435,10 +460,14 @@
 				197B4F192213FE110034055B /* ThrowExceptViewController.swift in Sources */,
 				194C8E542149F8FF005AF7AD /* GlTableHeaderView.swift in Sources */,
 				194C8E522149F3F9005AF7AD /* CommConst.swift in Sources */,
+				41F057F929B8705F00667032 /* LottieViewController.swift in Sources */,
 				41A8290B29933F09006B1215 /* ZXFCardsVC.swift in Sources */,
 				195BF7282150A669005A20ED /* GradientCommand.swift in Sources */,
+				41EB67502A04ABC5009E992E /* ObjectiveCViewController.m in Sources */,
 				194C8E63214A3763005AF7AD /* Invoker.swift in Sources */,
+				414EF17329B316950033EBB1 /* GunDongSelViewController.swift in Sources */,
 				194C8E5F214A3466005AF7AD /* Rceiver.swift in Sources */,
+				416C9F9429AB3828008946DA /* BlurEffectExampleViewController.swift in Sources */,
 				197B4F1C2213FE830034055B /* TEVendingMachine.swift in Sources */,
 				19441E9921523D9C00663E1D /* Spreadsheet.swift in Sources */,
 				192084C3221503310065813B /* OpenGlSimpleViewController.swift in Sources */,
@@ -447,6 +476,7 @@
 				41CA771728436F9400533162 /* StringAndAttributeTextVC.swift in Sources */,
 				41A8290C29933F09006B1215 /* ZXFCardView.swift in Sources */,
 				194942082148FE5B00D207A3 /* MultiplyStrategy.swift in Sources */,
+				41A7276029B6F53900F70F4F /* UIColor+PPUIKit.swift in Sources */,
 				194C8E58214A04D3005AF7AD /* UIViewExtension.swift in Sources */,
 				194941FE2148EBDC00D207A3 /* Sequence.swift in Sources */,
 				194942062148F2AD00D207A3 /* ClosureStrategy.swift in Sources */,

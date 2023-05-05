@@ -1,0 +1,12 @@
+[
+    { "title": "开心", "iconName": "mood_emoji_happy"},
+    { "title": "心动", "iconName": "mood_emoji_heartbeat" },
+    { "title": "疲惫", "iconName": "mood_emoji_exhausted"},
+    { "title": "贱贱", "iconName": "mood_emoji_bitch"},
+    { "title": "狗头", "iconName": "mood_emoji_dog"},
+    { "title": "焦虑", "iconName": "mood_emoji_restless"},
+    { "title": "惊恐", "iconName": "mood_emoji_panic"},
+    { "title": "哭泣", "iconName": "mood_emoji_cry"},
+    { "title": "裂开", "iconName": "mood_emoji_split"},
+    { "title": "疑问", "iconName": "mood_emoji_doubt"}
+]

@@ -5,3 +5,4 @@ ${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
 ${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/SwiftDevelopComm/SwiftDevelopComm.framework
+${BUILT_PRODUCTS_DIR}/YYText/YYText.framework

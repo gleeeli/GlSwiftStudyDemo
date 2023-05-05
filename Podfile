@@ -13,5 +13,11 @@ pod 'SwiftDevelopComm',:git => 'https://gitee.com/gleeeli/SwiftDevelopComm.git'
 pod 'RxSwift', '~> 5'
 pod 'RxCocoa', '~> 5'
 pod 'SnapKit'
+pod 'YYText'
+#pod 'YYModel'
+#pod 'YYImage'
 
+#pod 'PPUIKit', :path => './Module/PPUIKit' #公共UI组件
+#pod 'PPBaseModule', :path => './Module/PPBaseModule' #配配基础公共组件
+#pod 'libwebp', '1.0.2'
 end

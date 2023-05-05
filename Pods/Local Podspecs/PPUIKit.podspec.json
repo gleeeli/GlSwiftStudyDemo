@@ -1,0 +1,66 @@
+{
+  "name": "PPUIKit",
+  "version": "0.1.0",
+  "summary": "A short description of PPUIKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/linqinglin/PPUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "linqinglin": "linqinglin@taqu.cn"
+  },
+  "source": {
+    "git": "https://github.com/linqinglin/PPUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "static_framework": true,
+  "source_files": "PPUIKit/Classes/**/*.{h,m,swift}",
+  "resource_bundles": {
+    "PPUIKit": [
+      "PPUIKit/**/*.{png,jpg,json,svg}"
+    ],
+    "PPUIKitAsset": [
+      "PPUIKit/Resource/*.xcassets"
+    ]
+  },
+  "resources": [
+    "PPUIKit/**/Resource/**/*.{png,svg,plist,gif}"
+  ],
+  "dependencies": {
+    "HBPublic": [
+
+    ],
+    "XHBTool": [
+
+    ],
+    "XHBSwiftKit": [
+
+    ],
+    "SnapKit": [
+
+    ],
+    "Then": [
+
+    ],
+    "RxCocoa": [
+
+    ],
+    "lottie-ios": [
+
+    ],
+    "LottiePlugin": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "PPBaseModule": [
+
+    ]
+  }
+}
