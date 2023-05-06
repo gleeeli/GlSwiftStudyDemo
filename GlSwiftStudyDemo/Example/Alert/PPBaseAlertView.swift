@@ -10,8 +10,8 @@ import Foundation
 
 
 @objc public class PPBaseAlertView: UIControl {
-    var curLevel: Int  = PPBaseAlertView.PPAlertLevelDefault
-    var onView: UIView? = UIApplication.shared.delegate?.window ?? nil
+    public var curLevel: Int  = PPBaseAlertView.PPAlertLevelDefault
+    public var onView: UIView? = UIApplication.shared.delegate?.window ?? nil
     var isTapBackHidden = false
     init() {
         super.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
@@ -86,11 +86,11 @@ extension PPBaseAlertView {
 
 
 extension PPBaseAlertView: PPAlertProtocol {
-    func showAlert() {
+    public func showAlert() {
         PPAlertManager.share.showAlertViewIfCan(view: self)
     }
 
-    func hiddenAlert(_ complete: (()->())? = nil) {
+    public func hiddenAlert(_ complete: (()->())? = nil) {
         self.removeFromOnView(isAnimate: true) {[weak self] in
             guard let self = self else {
                 return
@@ -101,7 +101,7 @@ extension PPBaseAlertView: PPAlertProtocol {
         
     }
     
-    func hiddenWaitShowAlert(_ complete: (()->())? = nil) {
+    public func hiddenWaitShowAlert(_ complete: (()->())? = nil) {
         self.removeFromOnView(isAnimate: false) {
             complete?()
         }
@@ -112,6 +112,7 @@ extension PPBaseAlertView: PPAlertProtocol {
         self.showAlert()
     }
 }
+
 
 
 

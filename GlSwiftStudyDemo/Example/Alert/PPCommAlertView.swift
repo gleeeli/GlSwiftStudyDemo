@@ -75,7 +75,7 @@ import Foundation
 }
 
 public class PPCommAlertView: PPBaseAlertView {
-    var config: PPCommAlertConfig = PPCommAlertConfig() // 需要配置的东西
+    public var config: PPCommAlertConfig = PPCommAlertConfig() // 需要配置的东西
     
     // 指定样式，白色背景，还是黑色背景
     public var style: PPCommAlertStyle = .whitebg {
