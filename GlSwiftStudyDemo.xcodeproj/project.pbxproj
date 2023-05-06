@@ -53,6 +53,12 @@
 		41A8291829933F15006B1215 /* card5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8291229933F15006B1215 /* card5.jpg */; };
 		41CA771728436F9400533162 /* StringAndAttributeTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */; };
 		41EB67502A04ABC5009E992E /* ObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EB674F2A04ABC5009E992E /* ObjectiveCViewController.m */; };
+		41EB67522A0508CF009E992E /* UIAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB67512A0508CF009E992E /* UIAlertViewController.swift */; };
+		41EB67562A050BC6009E992E /* PPAlertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB67552A050BC6009E992E /* PPAlertProtocol.swift */; };
+		41EB67582A050DED009E992E /* PPBaseAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB67572A050DED009E992E /* PPBaseAlertView.swift */; };
+		41EB675A2A0510C2009E992E /* PPAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB67592A0510C2009E992E /* PPAlertManager.swift */; };
+		41EB675C2A05EF84009E992E /* PPCommAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB675B2A05EF84009E992E /* PPCommAlertView.swift */; };
+		41EB675E2A060452009E992E /* PPUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB675D2A060452009E992E /* PPUIColor.swift */; };
 		41F057F929B8705F00667032 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F057F829B8705F00667032 /* LottieViewController.swift */; };
 		F7FC550C61730024213FB6CF /* Pods_GlSwiftStudyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A97B3446B4D80CFE4BC10B /* Pods_GlSwiftStudyDemo.framework */; };
 /* End PBXBuildFile section */
@@ -110,6 +116,12 @@
 		41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAndAttributeTextVC.swift; sourceTree = "<group>"; };
 		41EB674E2A04ABC5009E992E /* ObjectiveCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCViewController.h; sourceTree = "<group>"; };
 		41EB674F2A04ABC5009E992E /* ObjectiveCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCViewController.m; sourceTree = "<group>"; };
+		41EB67512A0508CF009E992E /* UIAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertViewController.swift; sourceTree = "<group>"; };
+		41EB67552A050BC6009E992E /* PPAlertProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPAlertProtocol.swift; sourceTree = "<group>"; };
+		41EB67572A050DED009E992E /* PPBaseAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPBaseAlertView.swift; sourceTree = "<group>"; };
+		41EB67592A0510C2009E992E /* PPAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPAlertManager.swift; sourceTree = "<group>"; };
+		41EB675B2A05EF84009E992E /* PPCommAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCommAlertView.swift; sourceTree = "<group>"; };
+		41EB675D2A060452009E992E /* PPUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPUIColor.swift; path = Extension/PPUIColor.swift; sourceTree = "<group>"; };
 		41F057F829B8705F00667032 /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 		B8A97B3446B4D80CFE4BC10B /* Pods_GlSwiftStudyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlSwiftStudyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB15E6984E2332E05CB86C17 /* Pods-GlSwiftStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.debug.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +240,7 @@
 		194C8E502149F3AE005AF7AD /* Comm */ = {
 			isa = PBXGroup;
 			children = (
+				41EB675D2A060452009E992E /* PPUIColor.swift */,
 				41A7275F29B6F53900F70F4F /* UIColor+PPUIKit.swift */,
 				212BB3022423318800A3247F /* BaseGrammar */,
 				197B4F1A2213FE5C0034055B /* ThrowException */,
@@ -278,6 +291,7 @@
 		419B64FD2830A546001A2587 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				41EB67532A0508E1009E992E /* Alert */,
 				41A8290629933EE6006B1215 /* AnimatePage */,
 				419B64FE2830A55E001A2587 /* RxExampleViewController.swift */,
 				419DFFE128422D3E00D20740 /* DateViewController.swift */,
@@ -314,6 +328,18 @@
 				41A8291229933F15006B1215 /* card5.jpg */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		41EB67532A0508E1009E992E /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				41EB67512A0508CF009E992E /* UIAlertViewController.swift */,
+				41EB67552A050BC6009E992E /* PPAlertProtocol.swift */,
+				41EB67572A050DED009E992E /* PPBaseAlertView.swift */,
+				41EB67592A0510C2009E992E /* PPAlertManager.swift */,
+				41EB675B2A05EF84009E992E /* PPCommAlertView.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		5678E22C97815EF1D5315559 /* Pods */ = {
@@ -460,8 +486,10 @@
 				197B4F192213FE110034055B /* ThrowExceptViewController.swift in Sources */,
 				194C8E542149F8FF005AF7AD /* GlTableHeaderView.swift in Sources */,
 				194C8E522149F3F9005AF7AD /* CommConst.swift in Sources */,
+				41EB67522A0508CF009E992E /* UIAlertViewController.swift in Sources */,
 				41F057F929B8705F00667032 /* LottieViewController.swift in Sources */,
 				41A8290B29933F09006B1215 /* ZXFCardsVC.swift in Sources */,
+				41EB67562A050BC6009E992E /* PPAlertProtocol.swift in Sources */,
 				195BF7282150A669005A20ED /* GradientCommand.swift in Sources */,
 				41EB67502A04ABC5009E992E /* ObjectiveCViewController.m in Sources */,
 				194C8E63214A3763005AF7AD /* Invoker.swift in Sources */,
@@ -470,18 +498,22 @@
 				416C9F9429AB3828008946DA /* BlurEffectExampleViewController.swift in Sources */,
 				197B4F1C2213FE830034055B /* TEVendingMachine.swift in Sources */,
 				19441E9921523D9C00663E1D /* Spreadsheet.swift in Sources */,
+				41EB675E2A060452009E992E /* PPUIColor.swift in Sources */,
 				192084C3221503310065813B /* OpenGlSimpleViewController.swift in Sources */,
 				19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */,
 				419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */,
 				41CA771728436F9400533162 /* StringAndAttributeTextVC.swift in Sources */,
 				41A8290C29933F09006B1215 /* ZXFCardView.swift in Sources */,
+				41EB675A2A0510C2009E992E /* PPAlertManager.swift in Sources */,
 				194942082148FE5B00D207A3 /* MultiplyStrategy.swift in Sources */,
+				41EB67582A050DED009E992E /* PPBaseAlertView.swift in Sources */,
 				41A7276029B6F53900F70F4F /* UIColor+PPUIKit.swift in Sources */,
 				194C8E58214A04D3005AF7AD /* UIViewExtension.swift in Sources */,
 				194941FE2148EBDC00D207A3 /* Sequence.swift in Sources */,
 				194942062148F2AD00D207A3 /* ClosureStrategy.swift in Sources */,
 				1949420E2149150400D207A3 /* GeneralSequence.swift in Sources */,
 				212BB304242331BC00A3247F /* BlockViewController.swift in Sources */,
+				41EB675C2A05EF84009E992E /* PPCommAlertView.swift in Sources */,
 				194C8E5B214A3395005AF7AD /* ICommand.swift in Sources */,
 				41A8290A29933F09006B1215 /* Globa.swift in Sources */,
 			);
