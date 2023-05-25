@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import GlComm
 
 class UIAlertViewController: UIViewController {
 

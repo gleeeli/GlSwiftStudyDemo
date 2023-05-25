@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "SlideAdressTool.h"
 
 FOUNDATION_EXPORT double SwiftDevelopCommVersionNumber;
 FOUNDATION_EXPORT const unsigned char SwiftDevelopCommVersionString[];

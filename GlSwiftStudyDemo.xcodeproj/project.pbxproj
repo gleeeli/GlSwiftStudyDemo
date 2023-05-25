@@ -35,6 +35,7 @@
 		197B4F192213FE110034055B /* ThrowExceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B4F182213FE110034055B /* ThrowExceptViewController.swift */; };
 		197B4F1C2213FE830034055B /* TEVendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B4F1B2213FE830034055B /* TEVendingMachine.swift */; };
 		212BB304242331BC00A3247F /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212BB303242331BC00A3247F /* BlockViewController.swift */; };
+		411670DF2A08946400CA9AA7 /* UIImage+pp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411670DE2A08946400CA9AA7 /* UIImage+pp.swift */; };
 		414EF17329B316950033EBB1 /* GunDongSelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EF17229B316950033EBB1 /* GunDongSelViewController.swift */; };
 		416C9F9429AB3828008946DA /* BlurEffectExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416C9F9329AB3828008946DA /* BlurEffectExampleViewController.swift */; };
 		419B64FF2830A55E001A2587 /* RxExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B64FE2830A55E001A2587 /* RxExampleViewController.swift */; };
@@ -97,6 +98,7 @@
 		197B4F1B2213FE830034055B /* TEVendingMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEVendingMachine.swift; sourceTree = "<group>"; };
 		212BB303242331BC00A3247F /* BlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
 		35B3C2B59D34E8E2C4D4E85A /* Pods-GlSwiftStudyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.release.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		411670DE2A08946400CA9AA7 /* UIImage+pp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+pp.swift"; sourceTree = "<group>"; };
 		414EF17229B316950033EBB1 /* GunDongSelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunDongSelViewController.swift; sourceTree = "<group>"; };
 		416C9F9329AB3828008946DA /* BlurEffectExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectExampleViewController.swift; sourceTree = "<group>"; };
 		419B64FE2830A55E001A2587 /* RxExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxExampleViewController.swift; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 				41EB67572A050DED009E992E /* PPBaseAlertView.swift */,
 				41EB67592A0510C2009E992E /* PPAlertManager.swift */,
 				41EB675B2A05EF84009E992E /* PPCommAlertView.swift */,
+				411670DE2A08946400CA9AA7 /* UIImage+pp.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				194941DE2148AC2B00D207A3 /* Frameworks */,
 				194941DF2148AC2B00D207A3 /* Resources */,
 				EBDE19ACA4913D56AA4255FD /* [CP] Embed Pods Frameworks */,
+				07E97DD1570B8A7073AEE868 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -427,6 +431,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		07E97DD1570B8A7073AEE868 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D2C6FC434D76AD45E3C397AD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,6 +497,7 @@
 				194941E72148AC2B00D207A3 /* ViewController.swift in Sources */,
 				192084C72215039C0065813B /* OpenglSimpleDemo.cpp in Sources */,
 				41A7274D29B6D5D000F70F4F /* NSAttributedString+PPUIKit.swift in Sources */,
+				411670DF2A08946400CA9AA7 /* UIImage+pp.swift in Sources */,
 				194942022148F22E00D207A3 /* Strategy.swift in Sources */,
 				419B64FF2830A55E001A2587 /* RxExampleViewController.swift in Sources */,
 				41A7274B29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift in Sources */,

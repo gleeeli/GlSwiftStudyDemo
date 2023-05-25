@@ -1,6 +1,6 @@
 {
   "name": "SwiftDevelopComm",
-  "version": "0.1.0",
+  "version": "0.1.11",
   "summary": "A short description of SwiftDevelopComm.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://gitee.com/gleeeli",
@@ -13,10 +13,44 @@
   },
   "source": {
     "git": "https://gitee.com/gleeeli/SwiftDevelopComm.git",
-    "tag": "0.1.0"
+    "tag": "0.1.11"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "SwiftDevelopComm/Classes/**/*"
+  "source_files": "SwiftDevelopComm/Classes/**/*",
+  "resource_bundles": {
+    "SLMBProgressHUDBundle": [
+      "SwiftDevelopComm/Resource/MBProgressHUD.bundle"
+    ]
+  },
+  "dependencies": {
+    "Moya/RxSwift": [
+      "~> 14.0"
+    ],
+    "RxSwift": [
+      "~> 5"
+    ],
+    "RxCocoa": [
+      "~> 5"
+    ],
+    "HandyJSON": [
+      "~> 5.0.1"
+    ],
+    "Alamofire": [
+
+    ],
+    "SnapKit": [
+
+    ],
+    "MGJRouter": [
+
+    ],
+    "IQKeyboardManagerSwift": [
+
+    ],
+    "MBProgressHUD": [
+      "~> 1.2.0"
+    ]
+  }
 }

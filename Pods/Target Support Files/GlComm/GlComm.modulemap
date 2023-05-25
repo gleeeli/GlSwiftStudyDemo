@@ -1,0 +1,6 @@
+framework module GlComm {
+  umbrella header "GlComm-umbrella.h"
+
+  export *
+  module * { export * }
+}

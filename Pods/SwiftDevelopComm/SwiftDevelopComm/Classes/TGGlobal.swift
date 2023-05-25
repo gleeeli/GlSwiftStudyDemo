@@ -9,10 +9,12 @@
 import Foundation
 import UIKit
 
+public let GlTestKey: String = "123"
+
 //*start  frame相关
 //以模板宽高为标准
-let TGTemplateWidth:CGFloat = 320.0;
-let TGTemplateHeight:CGFloat = 568.0;
+public let TGTemplateWidth:CGFloat = 320.0;
+public let TGTemplateHeight:CGFloat = 568.0;
 
 let TGScreenHeight = UIScreen.main.bounds.size.height
 let TGScreenWidth = UIScreen.main.bounds.size.width

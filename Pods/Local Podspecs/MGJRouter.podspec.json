@@ -1,0 +1,18 @@
+{
+  "name": "MGJRouter",
+  "version": "0.10.1",
+  "summary": "an smart iOS URL Router",
+  "homepage": "https://gitee.com/gleeeli/MGJRouter-master",
+  "license": "MIT",
+  "authors": {
+    "lzyy": "healdream@gmail.com"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "https://gitee.com/gleeeli/MGJRouter-master.git",
+    "tag": "0.10.1"
+  },
+  "source_files": "MGJRouter/*.{h,m}"
+}
