@@ -13,7 +13,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT), style: .grouped);
 //    var titles = [String]()
-    var titles = ["策略模式","非策略模式的普通方式实现","tableview的顶部刷新","命令模式","异常","block使用","RxSwift使用","日期","字符串和富文本","翻页效果","模糊效果","滚动渐变","上下滚动文字效果","OC类","自定义有优先级的弹窗"]
+    var titles = ["CoreText","策略模式","非策略模式的普通方式实现","tableview的顶部刷新","命令模式","异常","block使用","RxSwift使用","日期","字符串和富文本","翻页效果","模糊效果","滚动渐变","上下滚动文字效果","OC类","自定义有优先级的弹窗","UIButton"]
     
     
 
@@ -53,7 +53,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let content = titles[indexPath.row]
         let sb = UIStoryboard.init(name: "Main", bundle: nil)
-        if content == "策略模式" {
+        if content == "CoreText" {
+            let vc = CoreTextExampleViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if content == "策略模式" {
             
             let vc = sb.instantiateViewController(withIdentifier: "StrategyViewController") as! StrategyViewController;
             
@@ -116,6 +119,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             self.navigationController?.pushViewController(vc, animated: true)
         }else if content == "自定义有优先级的弹窗" {
             let vc = UIAlertViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if content == "UIButton" {
+            let vc = ButtonStyleViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
         

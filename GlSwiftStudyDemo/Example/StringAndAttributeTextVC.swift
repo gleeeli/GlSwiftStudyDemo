@@ -10,10 +10,14 @@ import UIKit
 
 class StringAndAttributeTextVC: UIViewController {
     var uploadModuleUUids:[String] = []
+    
+    var titleLabel = UILabel()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.view.backgroundColor = .white
         
        let color = getSeriviceColor(colorStr: "#FF7AD479")
         
@@ -23,13 +27,26 @@ class StringAndAttributeTextVC: UIViewController {
         view.backgroundColor = color
         
 //        test3()
-        self.uploadModuleUUids.append("test0_789")
-        self.uploadModuleUUids.append("test1_789")
-        self.uploadModuleUUids.append("test1_788")
-        print("\(self.uploadModuleUUids)")
-        print("------")
-        test4(moduleUuid: "test1")
-        print("\(self.uploadModuleUUids)")
+//        self.uploadModuleUUids.append("test0_789")
+//        self.uploadModuleUUids.append("test1_789")
+//        self.uploadModuleUUids.append("test1_788")
+//        print("\(self.uploadModuleUUids)")
+//        print("------")
+//        test4(moduleUuid: "test1")
+//        print("\(self.uploadModuleUUids)")
+        
+        testH5()
+    }
+    
+    func testH5() {
+        titleLabel.frame = CGRect(x: 0, y: 0, width: 200, height: 300)
+        titleLabel.font = UIFont.systemFont(ofSize: 11)
+        titleLabel.textColor = .red
+        titleLabel.numberOfLines = 0
+        self.view.addSubview(titleLabel)
+        
+        titleLabel.attributedText = NSAttributedString.getH5Attribute(text: "", font: titleLabel.font, color: titleLabel.textColor)
+        
     }
     
     func test4(moduleUuid: String) {
@@ -247,4 +264,74 @@ public extension UIColor {
     }
     
     
+}
+
+public extension NSAttributedString {
+    class func getH5Attribute(text: String, font: UIFont, color: UIColor?) -> NSMutableAttributedString {
+        var text = text
+        text = " <div>只需您<span style=\"color: #FB5D5D;\">上传真实</span>的头像并进行<span style=\"color: #FB5D5D;\">人脸扫描</span>，即可获得更多被异性关注和回复的机会，快来试试吧22～</div>"
+        if let textData = text.data(using: .unicode) {
+            var attributeString: NSMutableAttributedString
+            do {
+                var exportParams = [NSAttributedString.Key.foregroundColor: UIColor.yellow] as? NSDictionary
+                
+                attributeString = try NSMutableAttributedString.init(data: textData, options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html, NSAttributedString.DocumentReadingOptionKey.characterEncoding: NSNumber(value: String.Encoding.unicode.rawValue)], documentAttributes: &exportParams)
+                return attributeString
+            }catch let error {
+                print("\(error)")
+                return NSMutableAttributedString.init(string: text)
+            }
+        }
+        return NSMutableAttributedString.init(string: text)
+        
+//        var isHtmlText: Bool = false
+//        if text.contains("<em") || text.contains("<span") || text.contains("<div") || text.contains("<br>") || text.contains("<i") || text.contains("<p") || text.contains("<strong") {
+//            isHtmlText = true
+//        }
+//        do {
+//            var attributeString: NSMutableAttributedString
+//            if isHtmlText {
+//                var textAll = text
+//                if let color = color {
+//
+//                    let rgbaSwift = color.rgbaValues
+//                    let rv = rgbaSwift.red * 255
+//                    let gv = rgbaSwift.green * 255
+//                    let bv = rgbaSwift.blue * 255
+//                    let av = rgbaSwift.alpha
+//
+//                    var insertText = ""
+//                    if #available(iOS 14.0, *) {
+//                        insertText = text
+//                    } else {// 低版本加个空格 不然有时候最后一行显示不出来
+//                        let space = "<span style=\"font-size:1px;\">&nbsp;</span>"
+//                        insertText = "\(text)\(space)"
+//                    }
+//
+//                    textAll = "<div style=\"color:rgba(\(Int(rv)),\(Int(gv)),\(Int(bv)),\(av));font-size:\(font.pointSize)px; line-height: 1;\">\(insertText)</div>"
+//                }
+//                print("textAll:\(textAll)")
+//                if let textData = textAll.data(using: .utf8) {
+//                    attributeString = try NSMutableAttributedString.init(data: textData, options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html, NSAttributedString.DocumentReadingOptionKey.characterEncoding: NSNumber(value: String.Encoding.utf8.rawValue)], documentAttributes: nil)
+//                } else {
+//                    attributeString = NSMutableAttributedString.init(string: text)
+//                }
+//
+//            } else {
+//                attributeString = NSMutableAttributedString.init(string: text)
+//                let allCount = attributeString.length
+//
+//                attributeString.addAttributes([NSAttributedString.Key.font: font], range: NSRange(location: 0, length: allCount))
+//
+//                if let color = color {
+//                    attributeString.addAttributes([NSAttributedString.Key.foregroundColor: color], range: NSRange(location: 0, length: allCount))
+//                }
+//            }
+//
+//            return attributeString
+//        } catch let error {
+//            print("\(error)")
+//            return NSMutableAttributedString.init(string: text)
+//        }
+    }
 }

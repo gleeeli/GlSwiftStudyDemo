@@ -10,20 +10,31 @@ import UIKit
 import SnapKit
 
 class GunDongSelViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 6
-    }
     
-    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-        
-        return 80
-    }
-    
+    private lazy var datePickerView: UIDatePicker = {
+        let datePicker = UIDatePicker.init(frame: CGRect(x: 0, y: 100, width: UIScreen.main.bounds.size.width, height: 200))
+        let maxDate = Calendar.current.date(byAdding: .year, value: -18, to: Date()) ?? Date()
+        let minDate = Calendar.current.date(byAdding: .year, value: -35, to: Date()) ?? Date()
+//        datePicker.maximumDate = maxDate
+//        datePicker.minimumDate = minDate
 
+        let d = DateFormatter.init()
+        d.dateFormat =  "yyyy-MM-dd"
+        datePicker.date = d.date(from: "2000-06-01") ?? minDate
+        datePicker.tintColor = PPUIColor.red
+        datePicker.locale = Locale.init(identifier: "zh_Hans_CN")
+        datePicker.setValue(PPUIColor.red, forKeyPath: "textColor")
+        datePicker.datePickerMode = .date
+        datePicker.backgroundColor = UIColor.white
+        if #available(iOS 13.4, *) {
+            datePicker.preferredDatePickerStyle = .wheels
+        } else {
+            // Fallback on earlier versions
+        }
+        return datePicker
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,11 +42,16 @@ class GunDongSelViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     func setUI() {
-        let picker = UIPickerView(frame: CGRect(x: 0, y: 100, width: 320, height: 320))
-        picker.delegate = self
-        picker.showsSelectionIndicator = false
-        self.view.addSubview(picker)
+//        let picker = UIPickerView(frame: CGRect(x: 0, y: 100, width: 320, height: 320))
+//        picker.delegate = self
+//        picker.showsSelectionIndicator = false
+//        self.view.addSubview(picker)
         
+        
+        self.view.addSubview(self.datePickerView)
+        
+        self.datePickerView.setValue(UIColor.red, forKeyPath: "textColor")
+//        self.datePickerView.setValue(false, forKey: "highlightsToday")
     }
     
     
@@ -58,6 +74,17 @@ class GunDongSelViewController: UIViewController, UIPickerViewDelegate, UIPicker
         return backView
     }
 
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
     
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 6
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        
+        return 80
+    }
 
 }

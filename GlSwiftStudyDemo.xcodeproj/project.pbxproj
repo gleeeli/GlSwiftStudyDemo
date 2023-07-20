@@ -37,7 +37,11 @@
 		212BB304242331BC00A3247F /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212BB303242331BC00A3247F /* BlockViewController.swift */; };
 		411670DF2A08946400CA9AA7 /* UIImage+pp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411670DE2A08946400CA9AA7 /* UIImage+pp.swift */; };
 		414EF17329B316950033EBB1 /* GunDongSelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EF17229B316950033EBB1 /* GunDongSelViewController.swift */; };
+		415EF8022A66280C00F22744 /* CoreTextExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415EF8012A66280C00F22744 /* CoreTextExampleViewController.swift */; };
+		415EF8042A669CE800F22744 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = 415EF8032A669CE800F22744 /* test2.png */; };
 		416C9F9429AB3828008946DA /* BlurEffectExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416C9F9329AB3828008946DA /* BlurEffectExampleViewController.swift */; };
+		418391F32A259D3700455753 /* ButtonStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418391F22A259D3700455753 /* ButtonStyleViewController.swift */; };
+		418391F62A25E60400455753 /* PPCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418391F52A25E60400455753 /* PPCustomButton.swift */; };
 		419B64FF2830A55E001A2587 /* RxExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B64FE2830A55E001A2587 /* RxExampleViewController.swift */; };
 		419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419DFFE128422D3E00D20740 /* DateViewController.swift */; };
 		41A7274B29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7274A29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift */; };
@@ -100,7 +104,11 @@
 		35B3C2B59D34E8E2C4D4E85A /* Pods-GlSwiftStudyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.release.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		411670DE2A08946400CA9AA7 /* UIImage+pp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+pp.swift"; sourceTree = "<group>"; };
 		414EF17229B316950033EBB1 /* GunDongSelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunDongSelViewController.swift; sourceTree = "<group>"; };
+		415EF8012A66280C00F22744 /* CoreTextExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTextExampleViewController.swift; sourceTree = "<group>"; };
+		415EF8032A669CE800F22744 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
 		416C9F9329AB3828008946DA /* BlurEffectExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectExampleViewController.swift; sourceTree = "<group>"; };
+		418391F22A259D3700455753 /* ButtonStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleViewController.swift; sourceTree = "<group>"; };
+		418391F52A25E60400455753 /* PPCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCustomButton.swift; sourceTree = "<group>"; };
 		419B64FE2830A55E001A2587 /* RxExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxExampleViewController.swift; sourceTree = "<group>"; };
 		419DFFE128422D3E00D20740 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		41A7274A29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCycleScrollViewViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +250,7 @@
 		194C8E502149F3AE005AF7AD /* Comm */ = {
 			isa = PBXGroup;
 			children = (
+				418391F42A25E5BF00455753 /* CustomUI */,
 				41EB675D2A060452009E992E /* PPUIColor.swift */,
 				41A7275F29B6F53900F70F4F /* UIColor+PPUIKit.swift */,
 				212BB3022423318800A3247F /* BaseGrammar */,
@@ -290,9 +299,26 @@
 			path = BaseGrammar;
 			sourceTree = "<group>";
 		};
+		415EF8052A669CEE00F22744 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				415EF8032A669CE800F22744 /* test2.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		418391F42A25E5BF00455753 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				418391F52A25E60400455753 /* PPCustomButton.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
 		419B64FD2830A546001A2587 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				415EF8052A669CEE00F22744 /* Resource */,
 				41EB67532A0508E1009E992E /* Alert */,
 				41A8290629933EE6006B1215 /* AnimatePage */,
 				419B64FE2830A55E001A2587 /* RxExampleViewController.swift */,
@@ -304,6 +330,8 @@
 				41F057F829B8705F00667032 /* LottieViewController.swift */,
 				41EB674E2A04ABC5009E992E /* ObjectiveCViewController.h */,
 				41EB674F2A04ABC5009E992E /* ObjectiveCViewController.m */,
+				418391F22A259D3700455753 /* ButtonStyleViewController.swift */,
+				415EF8012A66280C00F22744 /* CoreTextExampleViewController.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -422,6 +450,7 @@
 				41A8291329933F15006B1215 /* bgImage.jpg in Resources */,
 				41A8291729933F15006B1215 /* card2.jpg in Resources */,
 				41A8291629933F15006B1215 /* card4.jpg in Resources */,
+				415EF8042A669CE800F22744 /* test2.png in Resources */,
 				41A8291429933F15006B1215 /* card1.jpg in Resources */,
 				41A8291829933F15006B1215 /* card5.jpg in Resources */,
 				194941EA2148AC2B00D207A3 /* Main.storyboard in Resources */,
@@ -509,7 +538,9 @@
 				194C8E542149F8FF005AF7AD /* GlTableHeaderView.swift in Sources */,
 				194C8E522149F3F9005AF7AD /* CommConst.swift in Sources */,
 				41EB67522A0508CF009E992E /* UIAlertViewController.swift in Sources */,
+				415EF8022A66280C00F22744 /* CoreTextExampleViewController.swift in Sources */,
 				41F057F929B8705F00667032 /* LottieViewController.swift in Sources */,
+				418391F62A25E60400455753 /* PPCustomButton.swift in Sources */,
 				41A8290B29933F09006B1215 /* ZXFCardsVC.swift in Sources */,
 				41EB67562A050BC6009E992E /* PPAlertProtocol.swift in Sources */,
 				195BF7282150A669005A20ED /* GradientCommand.swift in Sources */,
@@ -534,6 +565,7 @@
 				194941FE2148EBDC00D207A3 /* Sequence.swift in Sources */,
 				194942062148F2AD00D207A3 /* ClosureStrategy.swift in Sources */,
 				1949420E2149150400D207A3 /* GeneralSequence.swift in Sources */,
+				418391F32A259D3700455753 /* ButtonStyleViewController.swift in Sources */,
 				212BB304242331BC00A3247F /* BlockViewController.swift in Sources */,
 				41EB675C2A05EF84009E992E /* PPCommAlertView.swift in Sources */,
 				194C8E5B214A3395005AF7AD /* ICommand.swift in Sources */,
