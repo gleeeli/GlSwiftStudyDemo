@@ -9,6 +9,10 @@
 import UIKit
 import SnapKit
 
+/*
+ https://www.jianshu.com/p/eb9426a54395
+ https://www.jianshu.com/p/9987e6194b2e
+ */
 class CoreTextExampleViewController: UIViewController {
     
     let cView = CoreTextView()
@@ -151,9 +155,14 @@ class CoreTextView: UIView {
             return 0
         }
         
-        let ImgRunDelegateGetWidthCallback: @convention(c)(UnsafeMutableRawPointer) -> CGFloat = {_ in
+        let ImgRunDelegateGetWidthCallback: @convention(c)(UnsafeMutableRawPointer) -> CGFloat = {refCon in
+            let pInt2 = refCon.assumingMemoryBound(to: Int8.self)
             
-            return 80
+            let imageName = String(cString: pInt2)
+    
+            let width = UIImage(named: imageName)?.size.width
+            print("获取到图片:\(imageName),宽度：\(String(describing: width))")
+            return width ?? 0
         }
         
         var imageCallBacks: CTRunDelegateCallbacks = CTRunDelegateCallbacks(version: kCTRunDelegateCurrentVersion, dealloc: ImgRunDelegateDeallocCallback, getAscent: ImgRunDelegateGetAscentCallback, getDescent: ImgRunDelegateGetDescentCallback, getWidth: ImgRunDelegateGetWidthCallback)
@@ -161,7 +170,7 @@ class CoreTextView: UIView {
         var imageNameStr: String = "test2.png"
         
         
-        var imgAttributeStr = NSMutableAttributedString(string: " ")
+        let imgAttributeStr = NSMutableAttributedString(string: " ")
         
         if let imgRunDelegate = CTRunDelegateCreate(&imageCallBacks, &imageNameStr) {
             let keyStr: String = "\(kCTRunDelegateAttributeName)"
@@ -203,7 +212,7 @@ class CoreTextView: UIView {
                 var runAscent: CGFloat = 0//此CTRun上缘线
                 var runDescent: CGFloat = 0//此CTRun下缘线
                 var runLeading: CGFloat = 0//CTRun间距
-                var lineOrigin = lineOrigins[i];//此行起点
+                let lineOrigin = lineOrigins[i];//此行起点
                 
                 let runP = CFArrayGetValueAtIndex(runs, j)
                 let run = unsafeBitCast(runP, to: CTRun.self)
@@ -222,7 +231,7 @@ class CoreTextView: UIView {
                     print("图片名称===\(imgName)");
                     if let image = UIImage(named: imgName), let cgImage = image.cgImage {
                         var imageRect = CGRect.zero
-                        imageRect.size = CGSizeMake(40, 20);
+                        imageRect.size = CGSizeMake(20, 20);
                         imageRect.origin.x = runRect.origin.x + lineOrigin.x
                         imageRect.origin.y = lineOrigin.y
                         
