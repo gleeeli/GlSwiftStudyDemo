@@ -33,7 +33,7 @@
 //    self.label.attributedText = muAttr;
     [self test3];
 }
-
+//这次是需要的行2
 - (void)test3 {
     NSString *test123 = @"12345哈哈";
     NSData *data=[NSMutableData dataWithData:[test123 dataUsingEncoding:NSUTF8StringEncoding]];
