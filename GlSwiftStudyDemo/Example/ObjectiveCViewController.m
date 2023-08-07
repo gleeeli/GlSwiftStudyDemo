@@ -21,7 +21,7 @@
     self.label = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, UIScreen.mainScreen.bounds.size.width, 300)];
     _label.textColor = [UIColor whiteColor];
     [self.view addSubview:self.label];
-    
+    //这次是需要的行1
     //这次需要回滚的行1
     
 //    [self test2];
