@@ -42,12 +42,41 @@ class CoreTextExampleViewController: UIViewController {
  CTFramesetter是一个工厂，创建CTFrame，一个界面上可以有多个CTFrame
  CTFrame就是一个基本画布，然后一行一行绘制。CoreText会自动根据传入的NSAttributedString属性创建CTRun,包括字体样式，颜色，间距等
  
- 作者：傲骨天成科技
  链接：https://www.jianshu.com/p/9987e6194b2e
- 来源：简书
  */
 class CoreTextView: UIView {
     let curWay = 3
+    
+    var imagesArray:[CTImageData] = []
+    var linkDataArray:[CTLinkData] = []
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setupEvents()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupEvents() {
+        self.isUserInteractionEnabled = true
+        let tagGes = UITapGestureRecognizer(target: self, action: #selector(userTapGestureDetected))
+        self.addGestureRecognizer(tagGes)
+    }
+    
+    @objc func userTapGestureDetected(ges: UIGestureRecognizer) {
+        let point = ges.location(in: self)
+        for imageData in self.imagesArray {
+            let imageRect = imageData.imgRect
+            let imageOriginY = self.bounds.size.height - imageRect.origin.y - imageRect.size.height
+            let rect = CGRect(x: imageRect.origin.x, y: imageOriginY, width: imageRect.size.width, height: imageRect.size.height)
+            if(CGRectContainsPoint(rect, point)) {
+                print("tap image handle");
+            }
+        }
+    }
+    
     override func draw(_ rect: CGRect) {
         //step 1:获取当前画布的上下文，用于后续将内容绘制在画布上
         if let context = UIGraphicsGetCurrentContext() {
@@ -140,6 +169,7 @@ class CoreTextView: UIView {
             
         }
         
+        /// 通过此函数设置图片处上部高
         let ImgRunDelegateGetAscentCallback: @convention(c)(UnsafeMutableRawPointer) -> CGFloat = {refCon in
             let pInt2 = refCon.assumingMemoryBound(to: Int8.self)
             
@@ -150,11 +180,13 @@ class CoreTextView: UIView {
             return height ?? 0
         }
         
+        /// 通过此函数设置图片处下部高
         let ImgRunDelegateGetDescentCallback: @convention(c)(UnsafeMutableRawPointer) -> CGFloat = {_ in
             
             return 0
         }
         
+        /// 通过此函数设置图片位置宽度
         let ImgRunDelegateGetWidthCallback: @convention(c)(UnsafeMutableRawPointer) -> CGFloat = {refCon in
             let pInt2 = refCon.assumingMemoryBound(to: Int8.self)
             
@@ -235,6 +267,12 @@ class CoreTextView: UIView {
                         imageRect.origin.x = runRect.origin.x + lineOrigin.x
                         imageRect.origin.y = lineOrigin.y
                         
+                        let imageModel = CTImageData()
+                        imageModel.image = image
+                        imageModel.imgRect = imageRect
+                        imageModel.idx = imgName
+                        
+                        self.imagesArray.append(imageModel)
                         context.draw(cgImage, in: imageRect)
                     }
                     
@@ -247,6 +285,18 @@ class CoreTextView: UIView {
     }
 }
 
+
+class CTImageData: NSObject {
+    var image: UIImage?
+    var imgRect: CGRect = CGRect.zero
+    var idx: String = ""
+}
+
+class CTLinkData: NSObject {
+    var text: String = ""
+    var url: String = ""
+    var range: NSRange?
+}
 
 //void ImgRunDelegateDeallocCallback(void *refCon) {
 //
