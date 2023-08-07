@@ -12,6 +12,7 @@ class LottieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //这是启始地方 start
         
     }
 
