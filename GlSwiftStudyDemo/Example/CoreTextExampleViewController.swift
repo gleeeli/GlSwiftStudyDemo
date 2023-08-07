@@ -19,8 +19,6 @@ class CoreTextExampleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //这次是需要的行2
-        //这次需要回滚的行2
         
         self.view.backgroundColor = UIColor.lightGray
         
