@@ -1,0 +1,72 @@
+{
+    "can_start_match": 0,
+    "message": "",
+    "profile_info": {
+        "affectivestatus_info": [{
+            "is_select": 1,
+            "text": "单身",
+            "value": 1
+        }, {
+            "is_select": 0,
+            "text": "恋爱中",
+            "value": 2
+        }, {
+            "is_select": 0,
+            "text": "已婚",
+            "value": 3
+        }, {
+            "is_select": 0,
+            "text": "离异/丧偶",
+            "value": 4
+        }],
+        "age": "28",
+        "card_img_arr": ["416984006260007045.png", "816984005880002734.png"],
+        "city_name": "深圳市",
+        "constellation": "魔羯座",
+        "mate_selection_info": [{
+            "is_select": 0,
+            "text": "读书",
+            "value": 1
+        }, {
+            "is_select": 0,
+            "text": "小说",
+            "value": 2
+        }, {
+            "is_select": 1,
+            "text": "买买买",
+            "value": 3
+        }, {
+            "is_select": 0,
+            "text": "烹饪",
+            "value": 4
+        }, {
+            "is_select": 0,
+            "text": "无辣不欢",
+            "value": 5
+        }, {
+            "is_select": 0,
+            "text": "逛街",
+            "value": 6
+        }, {
+            "is_select": 0,
+            "text": "摄影",
+            "value": 7
+        }, {
+            "is_select": 0,
+            "text": "动漫",
+            "value": 8
+        }, {
+            "is_select": 0,
+            "text": "肉食主义",
+            "value": 9
+        }, {
+            "is_select": 0,
+            "text": "游泳",
+            "value": 10
+        }, {
+            "is_select": 0,
+            "text": "骑行",
+            "value": 11
+        }]
+    }
+}
