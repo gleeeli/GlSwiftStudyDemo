@@ -18,5 +18,5 @@ pod 'RxCocoa', '~> 5'
 pod 'SnapKit'
 pod 'YYText'
 pod 'GlComm'
-
+pod 'Masonry'
 end

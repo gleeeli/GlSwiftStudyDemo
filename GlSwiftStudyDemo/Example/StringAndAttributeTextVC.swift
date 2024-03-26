@@ -36,6 +36,10 @@ class StringAndAttributeTextVC: UIViewController {
 //        print("\(self.uploadModuleUUids)")
         
         testH5()
+        
+        let str = "t123456789"
+        print("test:\(str[NSRange(location: 5, length: 3)])")
+        
     }
     
     func testH5() {

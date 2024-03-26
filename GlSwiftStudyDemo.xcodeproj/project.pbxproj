@@ -36,17 +36,30 @@
 		197B4F1C2213FE830034055B /* TEVendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B4F1B2213FE830034055B /* TEVendingMachine.swift */; };
 		212BB304242331BC00A3247F /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212BB303242331BC00A3247F /* BlockViewController.swift */; };
 		411670DF2A08946400CA9AA7 /* UIImage+pp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411670DE2A08946400CA9AA7 /* UIImage+pp.swift */; };
+		41358A1C2AD29A0F00734CC9 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41358A1B2AD29A0F00734CC9 /* TestModel.m */; };
+		413F210A2B2AB41F00DD148D /* ChatRoomLikeFillInformationAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F21092B2AB41F00DD148D /* ChatRoomLikeFillInformationAlertView.m */; };
+		413F210D2B2AB4A500DD148D /* ChatRoomLikeHallTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F210B2B2AB4A500DD148D /* ChatRoomLikeHallTagModel.m */; };
+		413F21112B2ACB4400DD148D /* ChatRoomLikeHallFillInfoAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F210F2B2ACB4400DD148D /* ChatRoomLikeHallFillInfoAModel.m */; };
+		413F21142B2ACE0C00DD148D /* UIFont+XHB.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F21122B2ACE0C00DD148D /* UIFont+XHB.m */; };
+		413F21172B2ACE6900DD148D /* NSString+XHB.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F21152B2ACE6800DD148D /* NSString+XHB.m */; };
+		413F211B2B2AD07E00DD148D /* UIImage+XHB.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F211A2B2AD07E00DD148D /* UIImage+XHB.m */; };
 		414EF17329B316950033EBB1 /* GunDongSelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EF17229B316950033EBB1 /* GunDongSelViewController.swift */; };
+		4151E9342AD7A2E900F52825 /* ChatRoomCommRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151E9332AD7A2E900F52825 /* ChatRoomCommRedView.m */; };
+		41599F892B246C7D004C22DF /* blTestjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 41599F882B246C7D004C22DF /* blTestjson.json */; };
 		415EF8022A66280C00F22744 /* CoreTextExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415EF8012A66280C00F22744 /* CoreTextExampleViewController.swift */; };
 		415EF8042A669CE800F22744 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = 415EF8032A669CE800F22744 /* test2.png */; };
 		416C9F9429AB3828008946DA /* BlurEffectExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416C9F9329AB3828008946DA /* BlurEffectExampleViewController.swift */; };
 		418391F32A259D3700455753 /* ButtonStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418391F22A259D3700455753 /* ButtonStyleViewController.swift */; };
 		418391F62A25E60400455753 /* PPCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418391F52A25E60400455753 /* PPCustomButton.swift */; };
+		4190BC2B2BB276A900FFDFC2 /* ChatRoomCommAlertModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4190BC272BB276A900FFDFC2 /* ChatRoomCommAlertModel.m */; };
+		4190BC2C2BB276A900FFDFC2 /* ChatRoomCommAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4190BC282BB276A900FFDFC2 /* ChatRoomCommAlertView.m */; };
+		4190BC2F2BB2796400FFDFC2 /* GLAutoLayoutAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4190BC2E2BB2796400FFDFC2 /* GLAutoLayoutAlertViewController.m */; };
 		419B64FF2830A55E001A2587 /* RxExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B64FE2830A55E001A2587 /* RxExampleViewController.swift */; };
 		419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419DFFE128422D3E00D20740 /* DateViewController.swift */; };
 		41A7274B29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7274A29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift */; };
 		41A7274D29B6D5D000F70F4F /* NSAttributedString+PPUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7274C29B6D5D000F70F4F /* NSAttributedString+PPUIKit.swift */; };
 		41A7276029B6F53900F70F4F /* UIColor+PPUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7275F29B6F53900F70F4F /* UIColor+PPUIKit.swift */; };
+		41A76BA42A89C46F0006790F /* String+Comm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A76BA32A89C46F0006790F /* String+Comm.swift */; };
 		41A8290A29933F09006B1215 /* Globa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8290729933F09006B1215 /* Globa.swift */; };
 		41A8290B29933F09006B1215 /* ZXFCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8290829933F09006B1215 /* ZXFCardsVC.swift */; };
 		41A8290C29933F09006B1215 /* ZXFCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A8290929933F09006B1215 /* ZXFCardView.swift */; };
@@ -103,17 +116,43 @@
 		212BB303242331BC00A3247F /* BlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
 		35B3C2B59D34E8E2C4D4E85A /* Pods-GlSwiftStudyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlSwiftStudyDemo.release.xcconfig"; path = "Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		411670DE2A08946400CA9AA7 /* UIImage+pp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+pp.swift"; sourceTree = "<group>"; };
+		41358A1A2AD29A0F00734CC9 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		41358A1B2AD29A0F00734CC9 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		413F21082B2AB41F00DD148D /* ChatRoomLikeFillInformationAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatRoomLikeFillInformationAlertView.h; path = GlSwiftStudyDemo/Example/ChatRoomLikeFillInformationAlertView.h; sourceTree = SOURCE_ROOT; };
+		413F21092B2AB41F00DD148D /* ChatRoomLikeFillInformationAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatRoomLikeFillInformationAlertView.m; path = GlSwiftStudyDemo/Example/ChatRoomLikeFillInformationAlertView.m; sourceTree = SOURCE_ROOT; };
+		413F210B2B2AB4A500DD148D /* ChatRoomLikeHallTagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomLikeHallTagModel.m; sourceTree = "<group>"; };
+		413F210C2B2AB4A500DD148D /* ChatRoomLikeHallTagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomLikeHallTagModel.h; sourceTree = "<group>"; };
+		413F210E2B2AB4DE00DD148D /* GLCommHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLCommHeader.h; sourceTree = "<group>"; };
+		413F210F2B2ACB4400DD148D /* ChatRoomLikeHallFillInfoAModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomLikeHallFillInfoAModel.m; sourceTree = "<group>"; };
+		413F21102B2ACB4400DD148D /* ChatRoomLikeHallFillInfoAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomLikeHallFillInfoAModel.h; sourceTree = "<group>"; };
+		413F21122B2ACE0C00DD148D /* UIFont+XHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+XHB.m"; sourceTree = "<group>"; };
+		413F21132B2ACE0C00DD148D /* UIFont+XHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+XHB.h"; sourceTree = "<group>"; };
+		413F21152B2ACE6800DD148D /* NSString+XHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XHB.m"; sourceTree = "<group>"; };
+		413F21162B2ACE6900DD148D /* NSString+XHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XHB.h"; sourceTree = "<group>"; };
+		413F21182B2ACFD700DD148D /* HBUIStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBUIStyle.h; sourceTree = "<group>"; };
+		413F21192B2AD07E00DD148D /* UIImage+XHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XHB.h"; sourceTree = "<group>"; };
+		413F211A2B2AD07E00DD148D /* UIImage+XHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XHB.m"; sourceTree = "<group>"; };
 		414EF17229B316950033EBB1 /* GunDongSelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunDongSelViewController.swift; sourceTree = "<group>"; };
+		4151E9322AD7A2E900F52825 /* ChatRoomCommRedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomCommRedView.h; sourceTree = "<group>"; };
+		4151E9332AD7A2E900F52825 /* ChatRoomCommRedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomCommRedView.m; sourceTree = "<group>"; };
+		41599F882B246C7D004C22DF /* blTestjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blTestjson.json; sourceTree = "<group>"; };
 		415EF8012A66280C00F22744 /* CoreTextExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTextExampleViewController.swift; sourceTree = "<group>"; };
 		415EF8032A669CE800F22744 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
 		416C9F9329AB3828008946DA /* BlurEffectExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectExampleViewController.swift; sourceTree = "<group>"; };
 		418391F22A259D3700455753 /* ButtonStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleViewController.swift; sourceTree = "<group>"; };
 		418391F52A25E60400455753 /* PPCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCustomButton.swift; sourceTree = "<group>"; };
+		4190BC272BB276A900FFDFC2 /* ChatRoomCommAlertModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomCommAlertModel.m; sourceTree = "<group>"; };
+		4190BC282BB276A900FFDFC2 /* ChatRoomCommAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomCommAlertView.m; sourceTree = "<group>"; };
+		4190BC292BB276A900FFDFC2 /* ChatRoomCommAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomCommAlertView.h; sourceTree = "<group>"; };
+		4190BC2A2BB276A900FFDFC2 /* ChatRoomCommAlertModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomCommAlertModel.h; sourceTree = "<group>"; };
+		4190BC2D2BB2796400FFDFC2 /* GLAutoLayoutAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLAutoLayoutAlertViewController.h; sourceTree = "<group>"; };
+		4190BC2E2BB2796400FFDFC2 /* GLAutoLayoutAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLAutoLayoutAlertViewController.m; sourceTree = "<group>"; };
 		419B64FE2830A55E001A2587 /* RxExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxExampleViewController.swift; sourceTree = "<group>"; };
 		419DFFE128422D3E00D20740 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		41A7274A29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCycleScrollViewViewController.swift; sourceTree = "<group>"; };
 		41A7274C29B6D5D000F70F4F /* NSAttributedString+PPUIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+PPUIKit.swift"; sourceTree = "<group>"; };
 		41A7275F29B6F53900F70F4F /* UIColor+PPUIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+PPUIKit.swift"; path = "Extension/UIColor+PPUIKit.swift"; sourceTree = "<group>"; };
+		41A76BA32A89C46F0006790F /* String+Comm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Comm.swift"; sourceTree = "<group>"; };
 		41A8290729933F09006B1215 /* Globa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globa.swift; sourceTree = "<group>"; };
 		41A8290829933F09006B1215 /* ZXFCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXFCardsVC.swift; sourceTree = "<group>"; };
 		41A8290929933F09006B1215 /* ZXFCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXFCardView.swift; sourceTree = "<group>"; };
@@ -199,6 +238,7 @@
 		194941E32148AC2B00D207A3 /* GlSwiftStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				41599F882B246C7D004C22DF /* blTestjson.json */,
 				419B64FD2830A546001A2587 /* Example */,
 				192084C1221503020065813B /* OpenGl */,
 				19441E9721523D2E00663E1D /* FlyweightModule */,
@@ -266,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				194C8E57214A04D3005AF7AD /* UIViewExtension.swift */,
+				41A76BA32A89C46F0006790F /* String+Comm.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -299,6 +340,38 @@
 			path = BaseGrammar;
 			sourceTree = "<group>";
 		};
+		41358A192AD299F900734CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				413F21192B2AD07E00DD148D /* UIImage+XHB.h */,
+				413F211A2B2AD07E00DD148D /* UIImage+XHB.m */,
+				413F21162B2ACE6900DD148D /* NSString+XHB.h */,
+				413F21152B2ACE6800DD148D /* NSString+XHB.m */,
+				413F21132B2ACE0C00DD148D /* UIFont+XHB.h */,
+				413F21122B2ACE0C00DD148D /* UIFont+XHB.m */,
+				413F21102B2ACB4400DD148D /* ChatRoomLikeHallFillInfoAModel.h */,
+				413F210F2B2ACB4400DD148D /* ChatRoomLikeHallFillInfoAModel.m */,
+				413F210C2B2AB4A500DD148D /* ChatRoomLikeHallTagModel.h */,
+				413F210B2B2AB4A500DD148D /* ChatRoomLikeHallTagModel.m */,
+				41358A1A2AD29A0F00734CC9 /* TestModel.h */,
+				41358A1B2AD29A0F00734CC9 /* TestModel.m */,
+				413F21182B2ACFD700DD148D /* HBUIStyle.h */,
+				413F210E2B2AB4DE00DD148D /* GLCommHeader.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4151E9312AD7A2CA00F52825 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4151E9322AD7A2E900F52825 /* ChatRoomCommRedView.h */,
+				4151E9332AD7A2E900F52825 /* ChatRoomCommRedView.m */,
+				413F21082B2AB41F00DD148D /* ChatRoomLikeFillInformationAlertView.h */,
+				413F21092B2AB41F00DD148D /* ChatRoomLikeFillInformationAlertView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		415EF8052A669CEE00F22744 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +391,8 @@
 		419B64FD2830A546001A2587 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4151E9312AD7A2CA00F52825 /* View */,
+				41358A192AD299F900734CC9 /* Model */,
 				415EF8052A669CEE00F22744 /* Resource */,
 				41EB67532A0508E1009E992E /* Alert */,
 				41A8290629933EE6006B1215 /* AnimatePage */,
@@ -363,12 +438,18 @@
 		41EB67532A0508E1009E992E /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				4190BC2A2BB276A900FFDFC2 /* ChatRoomCommAlertModel.h */,
+				4190BC272BB276A900FFDFC2 /* ChatRoomCommAlertModel.m */,
+				4190BC292BB276A900FFDFC2 /* ChatRoomCommAlertView.h */,
+				4190BC282BB276A900FFDFC2 /* ChatRoomCommAlertView.m */,
 				41EB67512A0508CF009E992E /* UIAlertViewController.swift */,
 				41EB67552A050BC6009E992E /* PPAlertProtocol.swift */,
 				41EB67572A050DED009E992E /* PPBaseAlertView.swift */,
 				41EB67592A0510C2009E992E /* PPAlertManager.swift */,
 				41EB675B2A05EF84009E992E /* PPCommAlertView.swift */,
 				411670DE2A08946400CA9AA7 /* UIImage+pp.swift */,
+				4190BC2D2BB2796400FFDFC2 /* GLAutoLayoutAlertViewController.h */,
+				4190BC2E2BB2796400FFDFC2 /* GLAutoLayoutAlertViewController.m */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -448,6 +529,7 @@
 				41A8291529933F15006B1215 /* card3.jpg in Resources */,
 				194941EC2148AC2D00D207A3 /* Assets.xcassets in Resources */,
 				41A8291329933F15006B1215 /* bgImage.jpg in Resources */,
+				41599F892B246C7D004C22DF /* blTestjson.json in Resources */,
 				41A8291729933F15006B1215 /* card2.jpg in Resources */,
 				41A8291629933F15006B1215 /* card4.jpg in Resources */,
 				415EF8042A669CE800F22744 /* test2.png in Resources */,
@@ -527,23 +609,33 @@
 				192084C72215039C0065813B /* OpenglSimpleDemo.cpp in Sources */,
 				41A7274D29B6D5D000F70F4F /* NSAttributedString+PPUIKit.swift in Sources */,
 				411670DF2A08946400CA9AA7 /* UIImage+pp.swift in Sources */,
+				413F21112B2ACB4400DD148D /* ChatRoomLikeHallFillInfoAModel.m in Sources */,
 				194942022148F22E00D207A3 /* Strategy.swift in Sources */,
+				413F211B2B2AD07E00DD148D /* UIImage+XHB.m in Sources */,
 				419B64FF2830A55E001A2587 /* RxExampleViewController.swift in Sources */,
 				41A7274B29B607FF00F70F4F /* TitleCycleScrollViewViewController.swift in Sources */,
 				194C8E65214A3826005AF7AD /* CommandViewController.swift in Sources */,
 				194941E52148AC2B00D207A3 /* AppDelegate.swift in Sources */,
 				194C8E4F2149F23A005AF7AD /* TableViewTopScaleImageViewController.swift in Sources */,
+				41A76BA42A89C46F0006790F /* String+Comm.swift in Sources */,
 				1949420A21490E0600D207A3 /* StrategyViewController.swift in Sources */,
+				41358A1C2AD29A0F00734CC9 /* TestModel.m in Sources */,
+				413F210A2B2AB41F00DD148D /* ChatRoomLikeFillInformationAlertView.m in Sources */,
 				197B4F192213FE110034055B /* ThrowExceptViewController.swift in Sources */,
 				194C8E542149F8FF005AF7AD /* GlTableHeaderView.swift in Sources */,
+				413F21142B2ACE0C00DD148D /* UIFont+XHB.m in Sources */,
 				194C8E522149F3F9005AF7AD /* CommConst.swift in Sources */,
 				41EB67522A0508CF009E992E /* UIAlertViewController.swift in Sources */,
 				415EF8022A66280C00F22744 /* CoreTextExampleViewController.swift in Sources */,
 				41F057F929B8705F00667032 /* LottieViewController.swift in Sources */,
+				4151E9342AD7A2E900F52825 /* ChatRoomCommRedView.m in Sources */,
 				418391F62A25E60400455753 /* PPCustomButton.swift in Sources */,
+				4190BC2F2BB2796400FFDFC2 /* GLAutoLayoutAlertViewController.m in Sources */,
 				41A8290B29933F09006B1215 /* ZXFCardsVC.swift in Sources */,
+				4190BC2C2BB276A900FFDFC2 /* ChatRoomCommAlertView.m in Sources */,
 				41EB67562A050BC6009E992E /* PPAlertProtocol.swift in Sources */,
 				195BF7282150A669005A20ED /* GradientCommand.swift in Sources */,
+				413F21172B2ACE6900DD148D /* NSString+XHB.m in Sources */,
 				41EB67502A04ABC5009E992E /* ObjectiveCViewController.m in Sources */,
 				194C8E63214A3763005AF7AD /* Invoker.swift in Sources */,
 				414EF17329B316950033EBB1 /* GunDongSelViewController.swift in Sources */,
@@ -552,9 +644,11 @@
 				197B4F1C2213FE830034055B /* TEVendingMachine.swift in Sources */,
 				19441E9921523D9C00663E1D /* Spreadsheet.swift in Sources */,
 				41EB675E2A060452009E992E /* PPUIColor.swift in Sources */,
+				413F210D2B2AB4A500DD148D /* ChatRoomLikeHallTagModel.m in Sources */,
 				192084C3221503310065813B /* OpenGlSimpleViewController.swift in Sources */,
 				19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */,
 				419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */,
+				4190BC2B2BB276A900FFDFC2 /* ChatRoomCommAlertModel.m in Sources */,
 				41CA771728436F9400533162 /* StringAndAttributeTextVC.swift in Sources */,
 				41A8290C29933F09006B1215 /* ZXFCardView.swift in Sources */,
 				41EB675A2A0510C2009E992E /* PPAlertManager.swift in Sources */,

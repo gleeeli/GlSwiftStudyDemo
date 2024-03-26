@@ -20,6 +20,7 @@ PODS:
     - SDWebImage
   - HandyJSON (5.0.2)
   - IQKeyboardManagerSwift (6.5.10)
+  - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MGJRouter (0.10.1)
   - Moya/Core (14.0.0):
@@ -52,6 +53,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.0)
   - GlComm
+  - Masonry
   - MGJRouter (from `https://gitee.com/gleeeli/MGJRouter-master.git`)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
@@ -67,6 +69,7 @@ SPEC REPOS:
     - Alamofire
     - HandyJSON
     - IQKeyboardManagerSwift
+    - Masonry
     - MBProgressHUD
     - Moya
     - RxCocoa
@@ -91,11 +94,12 @@ CHECKOUT OPTIONS:
     :git: https://gitee.com/gleeeli/SwiftDevelopComm.git
 
 SPEC CHECKSUMS:
-  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   GlComm: f1b42eb5497169ab79b0bafa7ec0f6644bb4fe63
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MGJRouter: 5f0c3ff4b08059f0ad116dba09a30d206a545b4c
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
@@ -107,6 +111,6 @@ SPEC CHECKSUMS:
   SwiftDevelopComm: b64a85a5300714f51bf4919c0677195c4777044b
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 62a5fa96d6f09e7ac6ead80289736e51122ca1ae
+PODFILE CHECKSUM: 6040f58f6814c79d1251e0f926bede48e11a3015
 
 COCOAPODS: 1.12.1
