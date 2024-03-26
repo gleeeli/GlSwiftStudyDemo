@@ -21,17 +21,17 @@
     
     
     ChatRoomCommAlertModel *model = [[ChatRoomCommAlertModel alloc] init];
-    model.title = @"确认邀请Ta吗？";
+    model.title = @"确认选中吗？";
     model.cancelBtnTitle = @"取消";
     model.sureBtnTitle = @"确认";
 
     __weak typeof(self) weakself = self;
     model.bottomViewBlock = ^UIView * _Nonnull(UIView * _Nonnull contentView, UIView * _Nonnull topView) {
         UIButton *changesBtn = [[UIButton alloc] init];
-        [changesBtn setTitle:[NSString stringWithFormat:@" 进日次数（今日机会%d/%d）",4, 5] forState:UIControlStateNormal];
+        [changesBtn setTitle:[NSString stringWithFormat:@" 次数/总机会%d/%d",4, 5] forState:UIControlStateNormal];
         [contentView addSubview:changesBtn];
         changesBtn.titleLabel.font = [UIFont systemFontOfSize:13];
-        [changesBtn setTitleColor:[UIColor colorWithRed:177 green:180 blue:186 alpha:1] forState:UIControlStateNormal];
+        [changesBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [changesBtn setImage:[UIImage imageNamed:@"chatroom_comm_unselected"] forState:UIControlStateNormal];
         [changesBtn setImage:[UIImage imageNamed:@"chatroom_comm_selected"] forState:UIControlStateSelected];
         [changesBtn addTarget:weakself action:@selector(changesBtnClick) forControlEvents:UIControlEventTouchUpInside];

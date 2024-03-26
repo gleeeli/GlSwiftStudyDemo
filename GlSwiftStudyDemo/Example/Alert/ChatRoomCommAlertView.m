@@ -85,7 +85,7 @@
     if (![self isEmpty:self.model.subTitle]) {
         self.subTitleLabel = [[UILabel alloc] init];
         self.subTitleLabel.font = [UIFont systemFontOfSize:14];
-        self.subTitleLabel.textColor = [UIColor colorWithRed:112 green:114 blue:119 alpha:1];
+        self.subTitleLabel.textColor = [UIColor colorWithRed:112/255.0 green:114/255.0 blue:119/255.0 alpha:1];
         self.subTitleLabel.textAlignment = NSTextAlignmentCenter;
         self.subTitleLabel.numberOfLines = 0;
         [self.contentView addSubview:self.subTitleLabel];
@@ -229,7 +229,7 @@
     if(_sureBtn == nil) {
         _sureBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 238, self.btnHeight)];
         [_sureBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        _sureBtn.layer.backgroundColor = [UIColor colorWithRed:255 green:234 blue:99 alpha:1].CGColor;
+        _sureBtn.layer.backgroundColor = [UIColor colorWithRed:255/255.0 green:234/255.0 blue:99/255.0 alpha:1].CGColor;
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         _sureBtn.layer.cornerRadius = self.btnHeight * 0.5;
         _sureBtn.layer.masksToBounds = YES;
@@ -243,7 +243,7 @@
     if(_cancelBtn == nil) {
         _cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 238, self.btnHeight)];
         [_cancelBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        _cancelBtn.layer.backgroundColor = [UIColor colorWithRed:245 green:247 blue:250 alpha:1].CGColor;
+        _cancelBtn.layer.backgroundColor = [UIColor colorWithRed:245/255.0 green:247/255.0 blue:250/255.0 alpha:1].CGColor;
         _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         _cancelBtn.layer.cornerRadius = self.btnHeight * 0.5;
         _cancelBtn.layer.masksToBounds = YES;

@@ -13,7 +13,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT), style: .grouped);
 //    var titles = [String]()
-    var titles = ["CoreText","策略模式","非策略模式的普通方式实现","tableview的顶部刷新","命令模式","异常","block使用","RxSwift使用","日期","字符串和富文本","翻页效果","模糊效果","滚动渐变","上下滚动文字效果","OC类","自定义有优先级的弹窗","UIButton", "自定义弹窗"]
+    var titles = ["CoreText","策略模式","非策略模式的普通方式实现","tableview的顶部刷新","命令模式","异常","block使用","RxSwift使用","日期","字符串和富文本","翻页效果","模糊效果","滚动渐变","上下滚动文字效果","OC类","自定义有优先级的弹窗Swift","自定义兼容性强弹窗OC","UIButton"]
     
     
 
@@ -117,13 +117,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }else if content == "OC类" {
             let vc = ObjectiveCViewController()
             self.navigationController?.pushViewController(vc, animated: true)
-        }else if content == "自定义有优先级的弹窗" {
+        }else if content == "自定义有优先级的弹窗Swift" {
             let vc = UIAlertViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }else if content == "UIButton" {
             let vc = ButtonStyleViewController()
             self.navigationController?.pushViewController(vc, animated: true)
-        }else if content == "自定义弹窗" {
+        }else if content == "自定义兼容性强弹窗OC" {
             let vc = GLAutoLayoutAlertViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
