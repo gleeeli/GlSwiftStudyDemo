@@ -99,7 +99,7 @@
     }
     
     if(self.model.centerViewBlock) {
-        UIView *centerContentView = self.model.centerViewBlock(self.contentView, self.lastConBottomView);
+        UIView *centerContentView = self.model.centerViewBlock(self, self.contentView, self.lastConBottomView);
         self.lastConBottomView = centerContentView;
     }
     
@@ -128,7 +128,7 @@
     }
     
     if (self.model.bottomViewBlock != nil) {
-        UIView *bottomView = self.model.bottomViewBlock(self.contentView, self.lastConBottomView);
+        UIView *bottomView = self.model.bottomViewBlock(self, self.contentView, self.lastConBottomView);
         self.lastConBottomView = bottomView;
     }
     
@@ -196,6 +196,12 @@
     [self dismiss];
 }
 
+- (void)outViewTouchCommEventHandle:(id)sender {
+    if(self.model.outViewAllEventBlock) {
+        self.model.outViewAllEventBlock(sender);
+    }
+}
+
 //MARK: Public
 - (void)show:(UIView *)onView {
     self.frame = onView.bounds;
@@ -203,7 +209,7 @@
 }
     
 - (void)dismiss {
-    self.alertManager = nil;
+    //self.alertManager = nil;
     [self removeFromSuperview];
 }
 

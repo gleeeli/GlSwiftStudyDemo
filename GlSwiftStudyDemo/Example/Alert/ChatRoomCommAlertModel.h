@@ -17,6 +17,8 @@ typedef enum : NSUInteger {
     ChatRoomCommAlertEventAutoCancel,//自动取消
 } ChatRoomCommAlertEvent;
 
+@class ChatRoomCommAlertView;
+
 @interface ChatRoomCommAlertModel : NSObject
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *subTitle;
@@ -29,12 +31,14 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) NSTimeInterval dismissTime;
 //右上角显示关闭按钮
 @property (nonatomic, assign) BOOL showRightCloseBtn;
+@property (nonatomic, assign) BOOL testNum;
 
 //标题下的视图,位于中间部位
-@property (nonatomic, copy) UIView*(^centerViewBlock)(UIView *contentView, UIView *topView);
-@property (nonatomic, copy) UIView*(^bottomViewBlock)(UIView *contentView, UIView *topView);
+@property (nonatomic, copy) UIView*(^centerViewBlock)(ChatRoomCommAlertView *alertView, UIView *contentView, UIView *topView);
+@property (nonatomic, copy) UIView*(^bottomViewBlock)(ChatRoomCommAlertView *alertView, UIView *contentView, UIView *topView);
 @property (nonatomic, copy) void(^eventBlock)(ChatRoomCommAlertEvent event);
-
+//外部view事件通用回调
+@property (nonatomic, copy) void(^outViewAllEventBlock)(id sender);
 @end
 
 NS_ASSUME_NONNULL_END

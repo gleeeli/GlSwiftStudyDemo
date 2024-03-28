@@ -21,13 +21,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, readonly) UIStackView *btnsStackView;
 @property(nonatomic, strong, readonly) UILabel *subTitleLabel;
 
-@property(nonatomic, strong) NSObject * _Nullable alertManager;
+//@property(nonatomic, strong) NSObject * _Nullable alertManager;
 
 - (instancetype)initWithModel:(ChatRoomCommAlertModel *)model;
 - (void)show:(UIView *)onView;
 
 - (void)dismiss;
-
+- (void)outViewTouchCommEventHandle:(id)sender;
 @end
 
 
