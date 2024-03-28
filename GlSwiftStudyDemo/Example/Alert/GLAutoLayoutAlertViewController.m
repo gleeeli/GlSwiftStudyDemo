@@ -65,7 +65,7 @@
         if([sender isKindOfClass:[UIButton class]]) {
             UIButton *btn = (UIButton *)sender;
             if(btn.tag == 1111) {
-                [self changesBtnClick];
+                NSLog(@"点击切换机会");
             }
         }
     };
@@ -73,15 +73,15 @@
     ChatRoomCommAlertView *alertView = [[ChatRoomCommAlertView alloc] initWithModel:model];
     //防止释放
     //alertView.alertManager = self;
-    [alertView show:self.view];
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    [alertView show:window];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.navigationController popViewControllerAnimated:YES];
+    });
 }
 
 - (void)getmyModelWith:(NSInteger)modelType {
     NSLog(@"modelType:%zd", modelType);
-}
-
-- (void)changesBtnClick {
-    
 }
 
 @end
