@@ -13,6 +13,7 @@
 #import <Masonry/Masonry.h>
 #import "GLCommHeader.h"
 #import "ChatRoomLikeFillInformationAlertView.h"
+#import "GlAddClickButton.h"
 
 
 @interface ObjectiveCViewController ()<UIGestureRecognizerDelegate>
@@ -30,22 +31,42 @@
 //这次需要回滚的行2
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //增加点击范围
+    GlAddClickButton *button = [[GlAddClickButton alloc] initWithFrame:CGRectMake(10, 180, 100, 44)];
+    button.clickEdge = UIEdgeInsetsMake(-20, -20, -20, -20);
+    button.backgroundColor = [UIColor greenColor];
+    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
    
-    _testGetSet = @"hhhha";
-    NSString *name1 = self.testGetSet;
-    NSString *name = self->_testGetSet;
-    NSLog(@"name1:%@, name:%@", name1, name);
-    
-    UITapGestureRecognizer *tagGest = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(giftTagEvent:)];
-    [self.view addGestureRecognizer:tagGest];
-    
-    UIView *testView = [[UIView alloc] initWithFrame:CGRectMake(50, 100, 100, 50)];
-    testView.backgroundColor = [UIColor redColor];
-    testView.userInteractionEnabled = YES;
-    [self.view addSubview:testView];
-    
-//    UITapGestureRecognizer *tagGest2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(giftTagEvent2:)];
-//    [testView addGestureRecognizer:tagGest2];
+//    _testGetSet = @"hhhha";
+//    NSString *name1 = self.testGetSet;
+//    NSString *name = self->_testGetSet;
+//    NSLog(@"name1:%@, name:%@", name1, name);
+//    
+//    UITapGestureRecognizer *tagGest = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(giftTagEvent:)];
+//    [self.view addGestureRecognizer:tagGest];
+//    
+//    UILabel *testView = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, 100, 50)];
+//    testView.backgroundColor = [UIColor redColor];
+//    testView.userInteractionEnabled = YES;
+//    [self.view addSubview:testView];
+//    
+////    UITapGestureRecognizer *tagGest2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(giftTagEvent2:)];
+////    [testView addGestureRecognizer:tagGest2];
+//    
+//    NSString *allStr = @"123456";
+//    NSRange range = [allStr rangeOfString:@"8"];
+//    NSMutableAttributedString *allValueAttrs = [[NSMutableAttributedString alloc] init];
+//    if (range.location != NSNotFound) {
+//        [allValueAttrs addAttributes:@{NSForegroundColorAttributeName: COLOR_C5} range:range];
+//    }
+//    
+//    testView.attributedText = allValueAttrs;
+}
+
+- (void)buttonClick:(UIButton *)btn {
+    NSLog(@"点击xxxx");
 }
 
 - (void)giftTagEvent:(UIGestureRecognizer *)ges {

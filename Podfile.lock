@@ -14,12 +14,12 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - Alamofire (5.6.1)
+  - Alamofire (5.9.1)
   - GlComm (0.0.2):
     - AFNetworking
     - SDWebImage
   - HandyJSON (5.0.2)
-  - IQKeyboardManagerSwift (6.5.10)
+  - IQKeyboardManagerSwift (6.5.16)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MGJRouter (0.10.1)
@@ -34,9 +34,9 @@ PODS:
   - RxRelay (5.1.3):
     - RxSwift (~> 5)
   - RxSwift (5.1.3)
-  - SDWebImage (5.12.6):
-    - SDWebImage/Core (= 5.12.6)
-  - SDWebImage/Core (5.12.6)
+  - SDWebImage (5.19.1):
+    - SDWebImage/Core (= 5.19.1)
+  - SDWebImage/Core (5.19.1)
   - SnapKit (5.6.0)
   - SwiftDevelopComm (0.1.11):
     - Alamofire
@@ -95,10 +95,10 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
   GlComm: f1b42eb5497169ab79b0bafa7ec0f6644bb4fe63
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
-  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MGJRouter: 5f0c3ff4b08059f0ad116dba09a30d206a545b4c
@@ -106,11 +106,11 @@ SPEC CHECKSUMS:
   RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
   RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
-  SDWebImage: a47aea9e3d8816015db4e523daff50cfd294499d
+  SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftDevelopComm: b64a85a5300714f51bf4919c0677195c4777044b
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 6040f58f6814c79d1251e0f926bede48e11a3015
+PODFILE CHECKSUM: 2081c723ee4855869774d455ef473448e3f7567d
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.15.2
