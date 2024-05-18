@@ -33,6 +33,7 @@
     [super viewDidLoad];
     
     //增加点击范围
+    //666777
     GlAddClickButton *button = [[GlAddClickButton alloc] initWithFrame:CGRectMake(10, 180, 100, 44)];
     button.clickEdge = UIEdgeInsetsMake(-20, -20, -20, -20);
     button.backgroundColor = [UIColor greenColor];
