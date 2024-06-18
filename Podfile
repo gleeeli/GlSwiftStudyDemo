@@ -19,4 +19,7 @@ pod 'SnapKit'
 pod 'YYText'
 pod 'GlComm'
 pod 'Masonry'
+pod 'GPUUtilization', :path => './Module/GPUUtilization'
+pod 'GlChartView', '2.0.2' #:path => '../../GlChartView-Master'
+pod 'DoraemonKit'
 end

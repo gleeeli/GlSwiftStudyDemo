@@ -1,6 +1,12 @@
 ${PODS_ROOT}/Target Support Files/Pods-GlSwiftStudyDemo/Pods-GlSwiftStudyDemo-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/DoraemonKit/DoraemonKit.framework
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework
+${BUILT_PRODUCTS_DIR}/GPUUtilization/GPUUtilization.framework
+${BUILT_PRODUCTS_DIR}/GlChartView/GlChartView.framework
+${BUILT_PRODUCTS_DIR}/GlPopView/GlPopView.framework
 ${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
 ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework

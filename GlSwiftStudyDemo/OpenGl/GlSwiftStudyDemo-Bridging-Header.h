@@ -4,3 +4,4 @@
 
 #import "ObjectiveCViewController.h"
 #import "GLAutoLayoutAlertViewController.h"
+#import "GlCommObjectManager.h"

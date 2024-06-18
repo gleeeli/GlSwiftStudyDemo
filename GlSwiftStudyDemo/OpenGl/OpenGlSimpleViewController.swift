@@ -7,24 +7,58 @@
 //
 
 import UIKit
+import GLKit
+import OpenGLES
+import AVFoundation
 
 class OpenGlSimpleViewController: UIViewController {
-
+    let captureSession = AVCaptureSession()
+    let previewView = PreviewView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        previewView.frame = CGRect(x: 0.0, y: 0.0, width: self.view.bounds.size.width, height: self.view.bounds.size.height)
+        self.view.addSubview(previewView)
 
-        // Do any additional setup after loading the view.
+        initAVDevice()
+        outputSessionConfig()
+        
+        self.previewView.videoPreviewLayer.session = self.captureSession;
+        
+        self.captureSession.startRunning()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func initAVDevice() {
+        // Create the capture session.
+        captureSession.beginConfiguration()
+        let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera,
+                                                  for: .video, position: .front)
+        guard let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice!),
+            captureSession.canAddInput(videoDeviceInput)
+            else { return }
+        captureSession.addInput(videoDeviceInput)
     }
-    */
-
+    
+    func outputSessionConfig() {
+        let photoOutput = AVCapturePhotoOutput()
+        guard captureSession.canAddOutput(photoOutput) else { return }
+        captureSession.sessionPreset = .photo
+        captureSession.addOutput(photoOutput)
+        captureSession.commitConfiguration()
+    }
 }
+
+class PreviewView: UIView {
+    override class var layerClass: AnyClass {
+        return AVCaptureVideoPreviewLayer.self
+    }
+    
+    /// Convenience wrapper to get layer as its statically known type.
+    var videoPreviewLayer: AVCaptureVideoPreviewLayer {
+        return layer as! AVCaptureVideoPreviewLayer
+    }
+}
+
+

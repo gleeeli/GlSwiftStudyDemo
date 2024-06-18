@@ -39,30 +39,36 @@
     button.backgroundColor = [UIColor greenColor];
     [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
-   
+    
+    
+    UIButton *glBtn = [[UIButton alloc] initWithFrame:CGRectMake(10, 250, 100, 44)];
+    glBtn.backgroundColor = [UIColor redColor];
+    [glBtn addTarget:self action:@selector(glBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:glBtn];
+    
 //    _testGetSet = @"hhhha";
 //    NSString *name1 = self.testGetSet;
 //    NSString *name = self->_testGetSet;
 //    NSLog(@"name1:%@, name:%@", name1, name);
-//    
+//
 //    UITapGestureRecognizer *tagGest = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(giftTagEvent:)];
 //    [self.view addGestureRecognizer:tagGest];
-//    
+//
 //    UILabel *testView = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, 100, 50)];
 //    testView.backgroundColor = [UIColor redColor];
 //    testView.userInteractionEnabled = YES;
 //    [self.view addSubview:testView];
-//    
+//
 ////    UITapGestureRecognizer *tagGest2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(giftTagEvent2:)];
 ////    [testView addGestureRecognizer:tagGest2];
-//    
+//
 //    NSString *allStr = @"123456";
 //    NSRange range = [allStr rangeOfString:@"8"];
 //    NSMutableAttributedString *allValueAttrs = [[NSMutableAttributedString alloc] init];
 //    if (range.location != NSNotFound) {
 //        [allValueAttrs addAttributes:@{NSForegroundColorAttributeName: COLOR_C5} range:range];
 //    }
-//    
+//
 //    testView.attributedText = allValueAttrs;
 }
 

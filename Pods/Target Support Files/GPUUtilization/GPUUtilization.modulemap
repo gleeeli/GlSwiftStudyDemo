@@ -1,0 +1,6 @@
+framework module GPUUtilization {
+  umbrella header "GPUUtilization-umbrella.h"
+
+  export *
+  module * { export * }
+}
