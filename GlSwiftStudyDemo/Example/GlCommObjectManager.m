@@ -38,7 +38,7 @@
                 [self.muCpuArray addObject:[NSNumber numberWithInteger:current.deviceUtilization]];
                 
                 NSDateFormatter *dataFormatter = [[NSDateFormatter alloc] init];
-                [dataFormatter setDateFormat:@"mm:ss.SSS"];
+                [dataFormatter setDateFormat:@"ss.S"];
                 NSString *dateStr = [dataFormatter stringFromDate:[NSDate date]];
                 
                 [self.xDescriptionDataSourceArray addObject:dateStr];
@@ -47,7 +47,7 @@
                     [self.muCpuArray removeObjectAtIndex:0];
                     [self.xDescriptionDataSourceArray removeObjectAtIndex:0];
                 }
-                
+                //NSLog(@"最新数组：%@", self.muCpuArray);
                 [self drawGpuLine];
             }];
         }];
@@ -62,12 +62,14 @@
     config.speed = 0;
     config.lineColors = [NSArray arrayWithObjects:[UIColor redColor],[UIColor orangeColor],[UIColor yellowColor],[UIColor greenColor],[UIColor cyanColor],[UIColor blueColor], nil];
     
-    config.ySuffix = @"%";
+    //config.ySuffix = @"%";
     config.xDescriptionDataSource = self.xDescriptionDataSourceArray;
     config.originNumbers = self.muCpuArray;//,@(90.72)
     config.minValue = 0;
     config.maxValue = 100;
     config.linesCountY = 10;
+    config.isShowYHorizontalStretchline = NO;
+    config.isShowYLeftGuideline = YES;
     //----------------------------------
     CGSize windowsize = self.window.frame.size;
     CGFloat bottom = self.window.safeAreaInsets.bottom;

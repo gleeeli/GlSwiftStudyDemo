@@ -32,7 +32,7 @@ PODS:
     - GCDWebServer/Core
   - GCDWebServer/WebUploader (3.5.4):
     - GCDWebServer/Core
-  - GlChartView (2.0.2):
+  - GlChartView (3.0.0):
     - GlPopView
   - GlComm (0.0.2):
     - AFNetworking
@@ -74,9 +74,9 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.0)
   - DoraemonKit
-  - GlChartView (= 2.0.2)
+  - GlChartView (= 3.0.0)
   - GlComm
-  - GPUUtilization (from `./Module/GPUUtilization`)
+  - GPUUtilization
   - Masonry
   - MGJRouter (from `https://gitee.com/gleeeli/MGJRouter-master.git`)
   - RxCocoa (~> 5)
@@ -96,6 +96,7 @@ SPEC REPOS:
     - GCDWebServer
     - GlChartView
     - GlPopView
+    - GPUUtilization
     - HandyJSON
     - IQKeyboardManagerSwift
     - Masonry
@@ -109,8 +110,6 @@ SPEC REPOS:
     - YYText
 
 EXTERNAL SOURCES:
-  GPUUtilization:
-    :path: "./Module/GPUUtilization"
   MGJRouter:
     :git: https://gitee.com/gleeeli/MGJRouter-master.git
   SwiftDevelopComm:
@@ -130,10 +129,10 @@ SPEC CHECKSUMS:
   DoraemonKit: 7448814a80d9ca56bc8db9105c464b7ec2e62623
   FMDB: eae540775bf7d0c87a5af926ae37af69effe5a19
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
-  GlChartView: decbef4dd0faebb8301b150710a9dc66bdbd373c
+  GlChartView: 6380243a07f8d48b276d49b6828941ab7d8fdefb
   GlComm: f1b42eb5497169ab79b0bafa7ec0f6644bb4fe63
   GlPopView: 3e744cf0c9c42f775b8376d25559c919dab525be
-  GPUUtilization: e28620b0f0095eb6057ba30a02e1fce333adf60c
+  GPUUtilization: cf389b280c631d8e78680c1613ab3cf46fb0600e
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -148,6 +147,6 @@ SPEC CHECKSUMS:
   SwiftDevelopComm: b64a85a5300714f51bf4919c0677195c4777044b
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 21c8c09e82dda603558eff673bec5d23f236999f
+PODFILE CHECKSUM: f8a1f938dc4693dd22f007db5423b2fc3deefbb0
 
 COCOAPODS: 1.15.2
