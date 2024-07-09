@@ -5,3 +5,4 @@
 #import "ObjectiveCViewController.h"
 #import "GLAutoLayoutAlertViewController.h"
 #import "GlCommObjectManager.h"
+#import "TestCollectionViewController.h"

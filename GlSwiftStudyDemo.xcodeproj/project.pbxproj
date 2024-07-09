@@ -50,6 +50,8 @@
 		415EF8022A66280C00F22744 /* CoreTextExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415EF8012A66280C00F22744 /* CoreTextExampleViewController.swift */; };
 		415EF8042A669CE800F22744 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = 415EF8032A669CE800F22744 /* test2.png */; };
 		416C9F9429AB3828008946DA /* BlurEffectExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416C9F9329AB3828008946DA /* BlurEffectExampleViewController.swift */; };
+		417862352C3D40C900A8F51F /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417862342C3D40C900A8F51F /* TestCollectionViewController.m */; };
+		417862382C3D413300A8F51F /* TestCollectionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417862372C3D413300A8F51F /* TestCollectionCollectionViewCell.m */; };
 		418391F32A259D3700455753 /* ButtonStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418391F22A259D3700455753 /* ButtonStyleViewController.swift */; };
 		418391F62A25E60400455753 /* PPCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418391F52A25E60400455753 /* PPCustomButton.swift */; };
 		4190BC2B2BB276A900FFDFC2 /* ChatRoomCommAlertModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4190BC272BB276A900FFDFC2 /* ChatRoomCommAlertModel.m */; };
@@ -70,6 +72,7 @@
 		41A8291629933F15006B1215 /* card4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8291029933F15006B1215 /* card4.jpg */; };
 		41A8291729933F15006B1215 /* card2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8291129933F15006B1215 /* card2.jpg */; };
 		41A8291829933F15006B1215 /* card5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A8291229933F15006B1215 /* card5.jpg */; };
+		41B7A4CA2C2C1D09008C7C05 /* GPUSamples.metal in Sources */ = {isa = PBXBuildFile; fileRef = 41B7A4C92C2C1D09008C7C05 /* GPUSamples.metal */; };
 		41BA3CEC2C213063005CF60C /* GlCommObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BA3CEB2C213063005CF60C /* GlCommObjectManager.m */; };
 		41CA771728436F9400533162 /* StringAndAttributeTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */; };
 		41EB67502A04ABC5009E992E /* ObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EB674F2A04ABC5009E992E /* ObjectiveCViewController.m */; };
@@ -143,6 +146,10 @@
 		415EF8012A66280C00F22744 /* CoreTextExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTextExampleViewController.swift; sourceTree = "<group>"; };
 		415EF8032A669CE800F22744 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
 		416C9F9329AB3828008946DA /* BlurEffectExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectExampleViewController.swift; sourceTree = "<group>"; };
+		417862332C3D40C900A8F51F /* TestCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
+		417862342C3D40C900A8F51F /* TestCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewController.m; sourceTree = "<group>"; };
+		417862362C3D413300A8F51F /* TestCollectionCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionCollectionViewCell.h; sourceTree = "<group>"; };
+		417862372C3D413300A8F51F /* TestCollectionCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionCollectionViewCell.m; sourceTree = "<group>"; };
 		418391F22A259D3700455753 /* ButtonStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleViewController.swift; sourceTree = "<group>"; };
 		418391F52A25E60400455753 /* PPCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCustomButton.swift; sourceTree = "<group>"; };
 		4190BC272BB276A900FFDFC2 /* ChatRoomCommAlertModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomCommAlertModel.m; sourceTree = "<group>"; };
@@ -166,6 +173,7 @@
 		41A8291029933F15006B1215 /* card4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card4.jpg; sourceTree = "<group>"; };
 		41A8291129933F15006B1215 /* card2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card2.jpg; sourceTree = "<group>"; };
 		41A8291229933F15006B1215 /* card5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card5.jpg; sourceTree = "<group>"; };
+		41B7A4C92C2C1D09008C7C05 /* GPUSamples.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GPUSamples.metal; sourceTree = "<group>"; };
 		41BA3CEA2C213063005CF60C /* GlCommObjectManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlCommObjectManager.h; sourceTree = "<group>"; };
 		41BA3CEB2C213063005CF60C /* GlCommObjectManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlCommObjectManager.m; sourceTree = "<group>"; };
 		41CA771628436F9400533162 /* StringAndAttributeTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAndAttributeTextVC.swift; sourceTree = "<group>"; };
@@ -202,6 +210,7 @@
 				192084C52215039C0065813B /* OpenglSimpleDemo.cpp */,
 				192084C62215039C0065813B /* OpenglSimpleDemo.hpp */,
 				192084C42215039B0065813B /* GlSwiftStudyDemo-Bridging-Header.h */,
+				41B7A4C92C2C1D09008C7C05 /* GPUSamples.metal */,
 			);
 			path = OpenGl;
 			sourceTree = "<group>";
@@ -376,6 +385,8 @@
 				413F21092B2AB41F00DD148D /* ChatRoomLikeFillInformationAlertView.m */,
 				413449F82BF4942600D49C18 /* GlAddClickButton.h */,
 				413449F92BF4942600D49C18 /* GlAddClickButton.m */,
+				417862362C3D413300A8F51F /* TestCollectionCollectionViewCell.h */,
+				417862372C3D413300A8F51F /* TestCollectionCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -417,6 +428,8 @@
 				415EF8012A66280C00F22744 /* CoreTextExampleViewController.swift */,
 				41BA3CEA2C213063005CF60C /* GlCommObjectManager.h */,
 				41BA3CEB2C213063005CF60C /* GlCommObjectManager.m */,
+				417862332C3D40C900A8F51F /* TestCollectionViewController.h */,
+				417862342C3D40C900A8F51F /* TestCollectionViewController.m */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -631,6 +644,7 @@
 				41A76BA42A89C46F0006790F /* String+Comm.swift in Sources */,
 				1949420A21490E0600D207A3 /* StrategyViewController.swift in Sources */,
 				41358A1C2AD29A0F00734CC9 /* TestModel.m in Sources */,
+				417862382C3D413300A8F51F /* TestCollectionCollectionViewCell.m in Sources */,
 				41BA3CEC2C213063005CF60C /* GlCommObjectManager.m in Sources */,
 				413F210A2B2AB41F00DD148D /* ChatRoomLikeFillInformationAlertView.m in Sources */,
 				197B4F192213FE110034055B /* ThrowExceptViewController.swift in Sources */,
@@ -655,11 +669,13 @@
 				416C9F9429AB3828008946DA /* BlurEffectExampleViewController.swift in Sources */,
 				197B4F1C2213FE830034055B /* TEVendingMachine.swift in Sources */,
 				19441E9921523D9C00663E1D /* Spreadsheet.swift in Sources */,
+				41B7A4CA2C2C1D09008C7C05 /* GPUSamples.metal in Sources */,
 				41EB675E2A060452009E992E /* PPUIColor.swift in Sources */,
 				413F210D2B2AB4A500DD148D /* ChatRoomLikeHallTagModel.m in Sources */,
 				192084C3221503310065813B /* OpenGlSimpleViewController.swift in Sources */,
 				19494210214919FE00D207A3 /* NotStrategyViewController.swift in Sources */,
 				419DFFE228422D3E00D20740 /* DateViewController.swift in Sources */,
+				417862352C3D40C900A8F51F /* TestCollectionViewController.m in Sources */,
 				4190BC2B2BB276A900FFDFC2 /* ChatRoomCommAlertModel.m in Sources */,
 				41CA771728436F9400533162 /* StringAndAttributeTextVC.swift in Sources */,
 				41A8290C29933F09006B1215 /* ZXFCardView.swift in Sources */,

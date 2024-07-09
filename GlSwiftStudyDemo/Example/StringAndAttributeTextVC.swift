@@ -19,6 +19,9 @@ class StringAndAttributeTextVC: UIViewController {
         
         self.view.backgroundColor = .white
         
+        
+        
+        
        let color = getSeriviceColor(colorStr: "#FF7AD479")
         
         let view = UIView(frame: CGRect(x: 10, y: 100, width: 100, height: 50))

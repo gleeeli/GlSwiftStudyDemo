@@ -32,19 +32,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //增加点击范围
-    //666777
-    GlAddClickButton *button = [[GlAddClickButton alloc] initWithFrame:CGRectMake(10, 180, 100, 44)];
-    button.clickEdge = UIEdgeInsetsMake(-20, -20, -20, -20);
-    button.backgroundColor = [UIColor greenColor];
-    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+    NSInteger cur = 3.0/4.0;
+    NSLog(@"cur:%zd", cur);
     
-    
-    UIButton *glBtn = [[UIButton alloc] initWithFrame:CGRectMake(10, 250, 100, 44)];
-    glBtn.backgroundColor = [UIColor redColor];
-    [glBtn addTarget:self action:@selector(glBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:glBtn];
+//    //增加点击范围
+//    //666777
+//    GlAddClickButton *button = [[GlAddClickButton alloc] initWithFrame:CGRectMake(10, 180, 100, 44)];
+//    button.clickEdge = UIEdgeInsetsMake(-20, -20, -20, -20);
+//    button.backgroundColor = [UIColor greenColor];
+//    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:button];
+//    
+//    
+//    UIButton *glBtn = [[UIButton alloc] initWithFrame:CGRectMake(10, 250, 100, 44)];
+//    glBtn.backgroundColor = [UIColor redColor];
+//    [glBtn addTarget:self action:@selector(glBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:glBtn];
     
 //    _testGetSet = @"hhhha";
 //    NSString *name1 = self.testGetSet;
